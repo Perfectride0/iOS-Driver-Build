@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GOTHICB.TTF">
+            <string>CenturyGothic-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="PastAndUpcommingTVC" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PastAndUpcommingTVC" rowHeight="611" id="K1e-2t-KfM" customClass="PastAndUpcommingTVC" customModule="DriverWallet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="457" height="611"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="K1e-2t-KfM" id="3gb-Z7-GOh">
+                <rect key="frame" x="0.0" y="0.0" width="457" height="611"/>
+                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xq5-xR-0Tg">
+                        <rect key="frame" x="15" y="15" width="427" height="450"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="b0A-vC-86i">
+                                <rect key="frame" x="0.0" y="0.0" width="427" height="100"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="6Gj-dX-OaM">
+                                        <rect key="frame" x="0.0" y="0.0" width="427" height="20"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Begin Trip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRY-1E-reX" customClass="SecondarySmallBoldLabel" customModule="DriverWallet" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="312.5" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="FFz-eC-bcl"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nue-1c-JJ4" customClass="SecondarySmallHeaderLabel" customModule="DriverWallet" customModuleProvider="target">
+                                                <rect key="frame" x="312.5" y="0.0" width="114.5" height="20"/>
+                                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jHX-FP-v6Y">
+                                        <rect key="frame" x="0.0" y="30" width="427" height="15"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trip Id : 512" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKj-Hl-41Q" customClass="smallLabel" customModule="DriverWallet" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="FU5-JC-ciC"/>
+                                                    <constraint firstAttribute="height" constant="15" id="sba-Gy-FPc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Micro" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2A-c0-Hek" customClass="ThemeSmallLabel" customModule="DriverWallet" customModuleProvider="target">
+                                                <rect key="frame" x="120" y="0.0" width="307" height="15"/>
+                                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="i2g-OB-yhD">
+                                        <rect key="frame" x="0.0" y="55" width="427" height="20"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a0L-J2-Epx">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="20"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wed Mar 31 12: 31 pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTe-Mq-fZi" customClass="smallLabel" customModule="DriverWallet" customModuleProvider="target">
+                                                        <rect key="frame" x="10" y="0.0" width="180" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="ibs-Ci-Zfa"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="XTe-Mq-fZi" secondAttribute="bottom" id="IIP-KU-4II"/>
+                                                    <constraint firstItem="XTe-Mq-fZi" firstAttribute="top" secondItem="a0L-J2-Epx" secondAttribute="top" id="SYz-sm-7KM"/>
+                                                    <constraint firstItem="XTe-Mq-fZi" firstAttribute="leading" secondItem="a0L-J2-Epx" secondAttribute="leading" constant="10" id="epV-An-yvF"/>
+                                                    <constraint firstAttribute="trailing" secondItem="XTe-Mq-fZi" secondAttribute="trailing" constant="10" id="iTd-7z-62D"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8yg-oO-ewA">
+                                                <rect key="frame" x="200" y="0.0" width="227" height="20"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mini $ 50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="GAi-FY-LxF" customClass="SecondarySmallHeaderLabel" customModule="DriverWallet" customModuleProvider="target">
+                                                        <rect key="frame" x="10" y="0.0" width="207" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="wSY-VU-fUg"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="GAi-FY-LxF" secondAttribute="trailing" constant="10" id="2aq-AV-vlp"/>
+                                                    <constraint firstItem="GAi-FY-LxF" firstAttribute="top" secondItem="8yg-oO-ewA" secondAttribute="top" id="PV4-Gh-Mbs"/>
+                                                    <constraint firstItem="GAi-FY-LxF" firstAttribute="leading" secondItem="8yg-oO-ewA" secondAttribute="leading" constant="10" id="u6J-M4-IBl"/>
+                                                    <constraint firstAttribute="bottom" secondItem="GAi-FY-LxF" secondAttribute="bottom" id="zhq-Tx-Cag"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HYV-JO-7mb">
+                                        <rect key="frame" x="0.0" y="85" width="427" height="15"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Schedule Trip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qA-rl-Wgy" customClass="ThemeSmallLabel" customModule="DriverWallet" customModuleProvider="target">
+                                                <rect key="frame" x="10" y="0.0" width="407" height="15"/>
+                                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="4qA-rl-Wgy" secondAttribute="trailing" constant="10" id="4ka-9N-qoE"/>
+                                            <constraint firstAttribute="height" constant="15" id="Mvj-Bh-10Y"/>
+                                            <constraint firstItem="4qA-rl-Wgy" firstAttribute="top" secondItem="HYV-JO-7mb" secondAttribute="top" id="kRc-JT-wEU"/>
+                                            <constraint firstAttribute="bottom" secondItem="4qA-rl-Wgy" secondAttribute="bottom" id="qRS-7e-POE"/>
+                                            <constraint firstItem="4qA-rl-Wgy" firstAttribute="leading" secondItem="HYV-JO-7mb" secondAttribute="leading" constant="10" id="u00-KB-iNk"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JcN-oI-yNw">
+                                <rect key="frame" x="0.0" y="110" width="427" height="340"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ola-qr-T1O">
+                                        <rect key="frame" x="0.0" y="0.0" width="427" height="145"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map_static" translatesAutoresizingMaskIntoConstraints="NO" id="WoZ-Ie-mBG">
+                                                <rect key="frame" x="0.0" y="0.0" width="427" height="140"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="140" id="b85-OV-W3Q"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="WoZ-Ie-mBG" firstAttribute="top" secondItem="ola-qr-T1O" secondAttribute="top" id="7FM-61-hgl"/>
+                                            <constraint firstItem="WoZ-Ie-mBG" firstAttribute="leading" secondItem="ola-qr-T1O" secondAttribute="leading" id="7tq-Tc-zGX"/>
+                                            <constraint firstAttribute="trailing" secondItem="WoZ-Ie-mBG" secondAttribute="trailing" id="jV8-Xu-Znz"/>
+                                            <constraint firstAttribute="bottom" secondItem="WoZ-Ie-mBG" secondAttribute="bottom" constant="5" id="tZ6-Gh-nY3"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R7n-DT-36h">
+                                        <rect key="frame" x="0.0" y="145" width="427" height="150"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fRD-lb-ZfU">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="150"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box_white" translatesAutoresizingMaskIntoConstraints="NO" id="cgX-wn-sSg">
+                                                        <rect key="frame" x="17.5" y="29" width="15" height="15"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="15" id="6AD-bM-vkJ"/>
+                                                            <constraint firstAttribute="width" secondItem="cgX-wn-sSg" secondAttribute="height" multiplier="1:1" id="SWJ-jZ-aeo"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bem-bX-Yhs">
+                                                        <rect key="frame" x="24" y="44" width="2" height="62.5"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="2" id="j3X-m4-t6K"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="wZb-1X-LYW"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="7nH-1v-drM">
+                                                        <rect key="frame" x="17.5" y="106.5" width="15" height="15"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="7nH-1v-drM" secondAttribute="height" multiplier="1:1" id="EEy-pW-CkC"/>
+                                                            <constraint firstAttribute="height" constant="15" id="bnI-km-cUL"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="cgX-wn-sSg" firstAttribute="centerX" secondItem="fRD-lb-ZfU" secondAttribute="centerX" id="AU9-dK-0KZ"/>
+                                                    <constraint firstItem="7nH-1v-drM" firstAttribute="top" secondItem="bem-bX-Yhs" secondAttribute="bottom" id="AaU-c2-wuY"/>
+                                                    <constraint firstItem="bem-bX-Yhs" firstAttribute="top" secondItem="cgX-wn-sSg" secondAttribute="bottom" id="EiG-Sr-eWY"/>
+                                                    <constraint firstAttribute="width" constant="50" id="It3-oa-ZeJ"/>
+                                                    <constraint firstItem="7nH-1v-drM" firstAttribute="centerX" secondItem="fRD-lb-ZfU" secondAttribute="centerX" id="Sb3-Wd-fiz"/>
+                                                    <constraint firstItem="bem-bX-Yhs" firstAttribute="centerX" secondItem="7nH-1v-drM" secondAttribute="centerX" id="j8m-l8-q78"/>
+                                                    <constraint firstItem="bem-bX-Yhs" firstAttribute="centerX" secondItem="cgX-wn-sSg" secondAttribute="centerX" id="nAw-lM-uuB"/>
+                                                    <constraint firstAttribute="height" constant="150" id="rXe-lH-txS"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bnb-dG-2cn">
+                                                <rect key="frame" x="50" y="0.0" width="377" height="150"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jGp-Lb-31j">
+                                                        <rect key="frame" x="0.0" y="0.0" width="377" height="72.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="452 Second Cross Street, Orlando, FL" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJt-bz-Ew7" customClass="smallLabel" customModule="DriverWallet" customModuleProvider="target">
+                                                                <rect key="frame" x="15" y="5" width="347" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vvZ-IA-dDv">
+                                                        <rect key="frame" x="0.0" y="77.5" width="377" height="72.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Orlando International Premium Outlets...." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yO2-UC-0ny" customClass="smallLabel" customModule="DriverWallet" customModuleProvider="target">
+                                                                <rect key="frame" x="15" y="5" width="347" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="c9F-EN-8Jr"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="jGp-Lb-31j" firstAttribute="centerY" secondItem="cgX-wn-sSg" secondAttribute="centerY" id="cC9-3Z-GFc"/>
+                                            <constraint firstItem="7nH-1v-drM" firstAttribute="centerY" secondItem="vvZ-IA-dDv" secondAttribute="centerY" id="jQF-cn-aJN"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="G9g-BL-eS4">
+                                        <rect key="frame" x="0.0" y="295" width="427" height="55"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YgZ-tc-b6Z">
+                                                <rect key="frame" x="0.0" y="0.0" width="206" height="55"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nQ-J4-RpL">
+                                                        <rect key="frame" x="5" y="5" width="196" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="nyt-uX-nil"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="19"/>
+                                                        <state key="normal" title="Edit Time">
+                                                            <color key="titleColor" systemColor="systemYellowColor"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="6nQ-J4-RpL" firstAttribute="top" secondItem="YgZ-tc-b6Z" secondAttribute="top" constant="5" id="NJm-NZ-0Yw"/>
+                                                    <constraint firstItem="6nQ-J4-RpL" firstAttribute="leading" secondItem="YgZ-tc-b6Z" secondAttribute="leading" constant="5" id="Uo0-Ls-9Ah"/>
+                                                    <constraint firstAttribute="trailing" secondItem="6nQ-J4-RpL" secondAttribute="trailing" constant="5" id="fke-RI-HQn"/>
+                                                    <constraint firstAttribute="bottom" secondItem="6nQ-J4-RpL" secondAttribute="bottom" constant="5" id="jgI-qt-UK3"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b5p-gh-2Gl">
+                                                <rect key="frame" x="221" y="0.0" width="206" height="55"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRM-8m-bFr">
+                                                        <rect key="frame" x="5" y="5" width="196" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="pj1-98-DSz"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="19"/>
+                                                        <state key="normal" title="Cancel Ride">
+                                                            <color key="titleColor" systemColor="systemYellowColor"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="PRM-8m-bFr" secondAttribute="trailing" constant="5" id="1vV-xm-RBW"/>
+                                                    <constraint firstItem="PRM-8m-bFr" firstAttribute="leading" secondItem="b5p-gh-2Gl" secondAttribute="leading" constant="5" id="8H6-hq-PkC"/>
+                                                    <constraint firstItem="PRM-8m-bFr" firstAttribute="top" secondItem="b5p-gh-2Gl" secondAttribute="top" constant="5" id="O3s-jh-YaD"/>
+                                                    <constraint firstAttribute="bottom" secondItem="PRM-8m-bFr" secondAttribute="bottom" constant="5" id="hfy-LM-e8t"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hsf-Yr-7wP">
+                                        <rect key="frame" x="0.0" y="295" width="427" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Seats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcA-d7-asH" customClass="smallLabel" customModule="DriverWallet" customModuleProvider="target">
+                                                <rect key="frame" x="15" y="5" width="402" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="peu-zi-dRg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="DcA-d7-asH" firstAttribute="leading" secondItem="Hsf-Yr-7wP" secondAttribute="leading" constant="15" id="9Y0-ar-Rdk"/>
+                                            <constraint firstAttribute="bottom" secondItem="DcA-d7-asH" secondAttribute="bottom" constant="5" id="GYg-Iw-h44"/>
+                                            <constraint firstItem="DcA-d7-asH" firstAttribute="top" secondItem="Hsf-Yr-7wP" secondAttribute="top" constant="5" id="LB2-Yb-zhE"/>
+                                            <constraint firstAttribute="trailing" secondItem="DcA-d7-asH" secondAttribute="trailing" constant="10" id="mbS-4x-XEG"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bxQ-Ye-fIE">
+                                        <rect key="frame" x="0.0" y="325" width="427" height="15"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AmC-vM-bVT">
+                                                <rect key="frame" x="50" y="12" width="327" height="2"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="2" id="uXZ-pm-s23"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="AmC-vM-bVT" secondAttribute="trailing" constant="50" id="BMI-Fz-fP0"/>
+                                            <constraint firstItem="AmC-vM-bVT" firstAttribute="leading" secondItem="bxQ-Ye-fIE" secondAttribute="leading" constant="50" id="WYp-56-kYX"/>
+                                            <constraint firstItem="AmC-vM-bVT" firstAttribute="top" secondItem="bxQ-Ye-fIE" secondAttribute="top" constant="12" id="dWj-Hp-1G3"/>
+                                            <constraint firstAttribute="bottom" secondItem="AmC-vM-bVT" secondAttribute="bottom" constant="1" id="l70-ax-3fu"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="xq5-xR-0Tg" firstAttribute="leading" secondItem="3gb-Z7-GOh" secondAttribute="leading" constant="15" id="6Ka-8v-loc"/>
+                    <constraint firstAttribute="trailing" secondItem="xq5-xR-0Tg" secondAttribute="trailing" constant="15" id="91d-Y2-LrY"/>
+                    <constraint firstAttribute="bottom" secondItem="xq5-xR-0Tg" secondAttribute="bottom" constant="15" id="cd8-HU-Dwy"/>
+                    <constraint firstItem="xq5-xR-0Tg" firstAttribute="top" secondItem="3gb-Z7-GOh" secondAttribute="top" constant="15" id="i14-GB-oQA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressStack" destination="bnb-dG-2cn" id="j3s-qN-W8K"/>
+                <outlet property="amountLbl" destination="nue-1c-JJ4" id="XqL-5f-5ze"/>
+                <outlet property="bgHolderStack" destination="xq5-xR-0Tg" id="ha1-Hx-v3b"/>
+                <outlet property="cancelRideBtn" destination="PRM-8m-bFr" id="Y22-Ss-y29"/>
+                <outlet property="contentStack" destination="JcN-oI-yNw" id="QL9-rQ-hfk"/>
+                <outlet property="dottedView" destination="bem-bX-Yhs" id="Iwi-ca-fMq"/>
+                <outlet property="dropIV" destination="cgX-wn-sSg" id="GNs-gb-GEh"/>
+                <outlet property="dropLocLbl" destination="VJt-bz-Ew7" id="Iw1-rJ-BVe"/>
+                <outlet property="editTimeBtn" destination="6nQ-J4-RpL" id="lMb-2g-HTM"/>
+                <outlet property="headerStack" destination="b0A-vC-86i" id="OBZ-p6-e9u"/>
+                <outlet property="jobStatusLbl" destination="mRY-1E-reX" id="cZX-dQ-kSc"/>
+                <outlet property="lineLbl" destination="AmC-vM-bVT" id="PgW-2x-yfM"/>
+                <outlet property="lineView" destination="bxQ-Ye-fIE" id="cx3-YM-AFy"/>
+                <outlet property="locStack" destination="R7n-DT-36h" id="ajR-Sv-ZFe"/>
+                <outlet property="mapBgView" destination="ola-qr-T1O" id="tWg-rW-fyc"/>
+                <outlet property="mapIV" destination="WoZ-Ie-mBG" id="Y7H-Gh-p5C"/>
+                <outlet property="numberOfSeats" destination="DcA-d7-asH" id="CQs-HM-6N5"/>
+                <outlet property="numberSeatsView" destination="Hsf-Yr-7wP" id="FvE-JU-glg"/>
+                <outlet property="pickLocLbl" destination="yO2-UC-0ny" id="yUO-C6-thq"/>
+                <outlet property="pickupIV" destination="7nH-1v-drM" id="VfW-df-kCz"/>
+                <outlet property="pinBgView" destination="fRD-lb-ZfU" id="jNW-qp-jJa"/>
+                <outlet property="schduleTripLbl" destination="4qA-rl-Wgy" id="CY1-Xg-viP"/>
+                <outlet property="scheduleBgView" destination="HYV-JO-7mb" id="7FX-Wb-b3K"/>
+                <outlet property="schedulePriceLbl" destination="GAi-FY-LxF" id="Ps0-ew-nCU"/>
+                <outlet property="scheduleRideStack" destination="G9g-BL-eS4" id="7lB-NZ-wfU"/>
+                <outlet property="scheduleTimeLbl" destination="XTe-Mq-fZi" id="Eq9-xI-MbR"/>
+                <outlet property="scheduleTimeStack" destination="i2g-OB-yhD" id="lIn-td-CeA"/>
+                <outlet property="tripIdBgView" destination="jHX-FP-v6Y" id="Vu2-7e-kMV"/>
+                <outlet property="tripIdLbl" destination="ZKj-Hl-41Q" id="OKh-sC-QEh"/>
+                <outlet property="tripStatusBgStack" destination="6Gj-dX-OaM" id="fDH-6A-z9z"/>
+                <outlet property="vehicleTypeLbl" destination="J2A-c0-Hek" id="mvR-GH-Jtc"/>
+            </connections>
+            <point key="canvasLocation" x="241.30434782608697" y="243.41517857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="box_white" width="288" height="288"/>
+        <image name="circle" width="100" height="100"/>
+        <image name="map_static" width="528" height="197"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

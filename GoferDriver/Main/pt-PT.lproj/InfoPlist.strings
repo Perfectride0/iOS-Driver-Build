@@ -1,0 +1,15 @@
+/* 
+  InfoPlist.strings
+  GoferDriver
+
+  Created by Trioangle on 28/02/19.
+  Copyright © 2019 Trioangle Technologies. All rights reserved.
+*/
+"NSLocationWhenInUseUsageDescription" = "GoferDriver Clique para adicionar um novo driver.";
+"NSLocationAlwaysUsageDescription" = "GoferDriver Clique para obter mais informações.";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "GoferDriver está desativado.";
+"NSLocationUsageDescription" = "GoferDriver Clique para obter mais informações.";
+"NSCameraUsageDescription" = "GoferDriver é um conjunto de caracteres que podem ser usados para fins estatísticos";
+"NSPhotoLibraryUsageDescription" = "GoferDriver é um conjunto de caracteres que podem ser utilizados para fins estatísticos";
+"NSMicrophoneUsageDescription" = "GoferDriver usa para entrar em contato com o motorista de viagem.";
+

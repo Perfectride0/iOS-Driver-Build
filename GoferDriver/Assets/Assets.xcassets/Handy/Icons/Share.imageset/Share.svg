@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="180" height="180" viewBox="0 0 180 180">
+  <defs>
+    <clipPath id="clip-Share">
+      <rect width="180" height="180"/>
+    </clipPath>
+  </defs>
+  <g id="Share" clip-path="url(#clip-Share)">
+    <path id="Icon_awesome-share-alt" data-name="Icon awesome-share-alt" d="M120.313,109.375a32.671,32.671,0,0,0-20.436,7.142L64.847,94.623a33,33,0,0,0,0-14.247L99.876,58.483a32.753,32.753,0,1,0-11.6-18.547L53.249,61.829a32.812,32.812,0,1,0,0,51.341l35.029,21.893a32.815,32.815,0,1,0,32.035-25.689Z" transform="translate(13 3)" fill="#e50914"/>
+  </g>
+</svg>

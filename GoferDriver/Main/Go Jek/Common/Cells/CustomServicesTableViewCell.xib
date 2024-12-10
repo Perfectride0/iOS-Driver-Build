@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomServicesTableViewCell" rowHeight="85" id="KGk-i7-Jjw" customClass="CustomServicesTableViewCell" customModule="DriverWallet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="358" height="69"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="358" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qKQ-dF-XJw" customClass="SecondaryView" customModule="DriverWallet" customModuleProvider="target">
+                        <rect key="frame" x="2" y="2" width="354" height="65"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="xJf-ej-pMM">
+                                <rect key="frame" x="15" y="8" width="324" height="40"/>
+                                <subviews>
+                                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xMK-RF-P2B">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mbm-hg-93l" customClass="SecondaryTintImageView" customModule="DriverWallet" customModuleProvider="target">
+                                                <rect key="frame" x="7.5" y="7.5" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="a8m-MG-w8e"/>
+                                                    <constraint firstAttribute="width" secondItem="mbm-hg-93l" secondAttribute="height" multiplier="1:1" id="qV5-dC-FBY"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="xMK-RF-P2B" secondAttribute="height" multiplier="1:1" id="91n-Q9-gOm"/>
+                                            <constraint firstItem="mbm-hg-93l" firstAttribute="centerY" secondItem="xMK-RF-P2B" secondAttribute="centerY" id="FmD-5F-eRH"/>
+                                            <constraint firstItem="mbm-hg-93l" firstAttribute="centerX" secondItem="xMK-RF-P2B" secondAttribute="centerX" id="UTP-G0-zmM"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZC-I5-e8n" customClass="SecondaryRegularLabel" customModule="DriverWallet" customModuleProvider="target">
+                                        <rect key="frame" x="55" y="0.0" width="214" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Cg-C9-sEz">
+                                        <rect key="frame" x="284" y="0.0" width="40" height="40"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kc9-0Y-tLI" customClass="SecondaryTintImageView" customModule="DriverWallet" customModuleProvider="target">
+                                                <rect key="frame" x="7.5" y="7.5" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="Pum-OZ-h6c"/>
+                                                    <constraint firstAttribute="width" secondItem="kc9-0Y-tLI" secondAttribute="height" multiplier="1:1" id="xMc-zs-sBM"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="kc9-0Y-tLI" firstAttribute="centerX" secondItem="8Cg-C9-sEz" secondAttribute="centerX" id="IWd-eM-spT"/>
+                                            <constraint firstItem="kc9-0Y-tLI" firstAttribute="centerY" secondItem="8Cg-C9-sEz" secondAttribute="centerY" id="XDA-lh-Ori"/>
+                                            <constraint firstAttribute="width" secondItem="8Cg-C9-sEz" secondAttribute="height" multiplier="1:1" id="aUw-HJ-UIL"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2vV-uW-Clo"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xJf-ej-pMM" secondAttribute="trailing" constant="15" id="N75-9M-cuF"/>
+                            <constraint firstItem="xJf-ej-pMM" firstAttribute="leading" secondItem="qKQ-dF-XJw" secondAttribute="leading" constant="15" id="pj7-0g-P0J"/>
+                            <constraint firstItem="xJf-ej-pMM" firstAttribute="top" secondItem="qKQ-dF-XJw" secondAttribute="top" constant="8" id="vLH-ua-hp2"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qKQ-dF-XJw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="3Wh-Eg-yGh"/>
+                    <constraint firstAttribute="bottom" secondItem="qKQ-dF-XJw" secondAttribute="bottom" constant="2" id="L8y-YH-HQl"/>
+                    <constraint firstItem="qKQ-dF-XJw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="2" id="LQb-4F-qdw"/>
+                    <constraint firstAttribute="trailing" secondItem="qKQ-dF-XJw" secondAttribute="trailing" constant="2" id="VlY-Nw-eGk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bgView" destination="qKQ-dF-XJw" id="rej-X5-1Z5"/>
+                <outlet property="checkBoxHolderView" destination="8Cg-C9-sEz" id="L7v-wS-Fvn"/>
+                <outlet property="checkBoxImg" destination="kc9-0Y-tLI" id="5yI-0X-XqA"/>
+                <outlet property="icon" destination="mbm-hg-93l" id="atu-Cu-paI"/>
+                <outlet property="titleLbl" destination="uZC-I5-e8n" id="gsI-yS-aKP"/>
+            </connections>
+            <point key="canvasLocation" x="159.42028985507247" y="90.066964285714278"/>
+        </tableViewCell>
+    </objects>
+</document>

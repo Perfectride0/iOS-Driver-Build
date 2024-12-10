@@ -1,0 +1,32 @@
+//
+//  GoferjekDriver.xcconfig
+//  Goferjek Driver
+//
+//  Created by trioangle on 07/10/21.
+//  Copyright © 2021 Vignesh Palanivel. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+
+// MARK: ---------- Keys and Identifiers ----------------
+USER_APP_NAME                = Gofer-Driver
+USER_BUNDLE_ID               = com.trioangle.goferdriver
+GOOGLE_MAP_KEY               = AIzaSyBMZyPFKT4yk1FeJkrgnMdT2sUJZ52RqCM
+GOOGLE_API_KEY               = AIzaSyBMZyPFKT4yk1FeJkrgnMdT2sUJZ52RqCM
+// MARK:  ---------- Application Version and App URL ----------------
+USER_VERSION                 = 1.8
+USER_BUILD                   = 3.0
+RELEASE_VERSION              = 1.2 // For Force Update
+APP_URL                      = https:/\/\gofer81.trioangledemo.com/
+//APP_URL              = http:/\/\10.10.9.237/goferjek-product/goferjek_php8.1/public/
+DEVELOPMENT_TEAM             = W89HL6566S
+REDIRECT_APP_USER            = Gofer
+USER_TYPE                    = Provider
+// MARK:  ---------- Appstore details and redirection url ----------------
+USER_APPSTORE_ID             = id1582943409
+USER_APPSTORE_DISPLAY_NAME   = Gofer
+USER_APPSTORE_APP_NAME       = Gofer
+DRIVER_APPSTORE_ID           = id1582826618
+DRIVER_APPSTORE_DISPLAY_NAME = Gofer-Driver
+DRIVER_APPSTORE_APP_NAME     = Gofer-Driver
+

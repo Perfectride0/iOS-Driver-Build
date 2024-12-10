@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="180" height="180" viewBox="0 0 180 180">
+  <defs>
+    <clipPath id="clip-Dropdown">
+      <rect width="180" height="180"/>
+    </clipPath>
+  </defs>
+  <g id="Dropdown" clip-path="url(#clip-Dropdown)">
+    <path id="Icon_awesome-caret-down" data-name="Icon awesome-caret-down" d="M12.569,13.5h151.45a11.75,11.75,0,0,1,8.3,20.072l-75.7,75.754a11.8,11.8,0,0,1-16.658,0L4.27,33.572A11.75,11.75,0,0,1,12.569,13.5Z" transform="translate(1.206 26.5)" fill="#424242"/>
+  </g>
+</svg>

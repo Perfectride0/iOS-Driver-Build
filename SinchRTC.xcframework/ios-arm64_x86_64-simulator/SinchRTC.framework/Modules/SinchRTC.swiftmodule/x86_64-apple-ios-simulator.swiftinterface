@@ -1,0 +1,330 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SinchRTC
+import AVFoundation
+import CallKit
+import Foundation
+import SinchRTC_Private
+import Swift
+import UIKit
+import _Concurrency
+@_hasMissingDesignatedInitializers final public class SinchVideoController {
+  final public var captureDevicePosition: AVFoundation.AVCaptureDevice.Position {
+    get
+    set
+  }
+  @frozen public enum IdleTimerState : Swift.String, Swift.CaseIterable {
+    case enabled
+    case disabled
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [SinchRTC.SinchVideoController.IdleTimerState]
+    public typealias RawValue = Swift.String
+    public static var allCases: [SinchRTC.SinchVideoController.IdleTimerState] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  final public var idleTimerOnCapturing: SinchRTC.SinchVideoController.IdleTimerState {
+    get
+    set
+  }
+  final public var remoteView: UIKit.UIView {
+    get
+  }
+  final public var localView: UIKit.UIView {
+    get
+  }
+  final public func setRemoteVideoFrameCallback(_ callback: SinchRTC.SinchVideoFrameCallback)
+  final public func setLocalVideoFrameCallback(_ callback: SinchRTC.SinchVideoFrameCallback)
+  @objc deinit
+}
+public protocol SinchVideoFrameCallback : AnyObject {
+  typealias OnFrameCompletionHandler = (_ buffer: CoreVideo.CVPixelBuffer) -> Swift.Void
+  func onFrame(_ cvPixelBuffer: CoreVideo.CVPixelBuffer, completionHandler: @escaping Self.OnFrameCompletionHandler)
+}
+extension AVFoundation.AVCaptureDevice.Position {
+  public mutating func toggle()
+}
+extension CoreVideo.CVBuffer {
+  public func sinGetUIImage() -> UIKit.UIImage
+}
+public struct SinchCallNotificationResult {
+  public let isTimedOut: Swift.Bool
+  public let remoteUserId: Swift.String
+  public let callId: Swift.String
+  public let isVideoOffered: Swift.Bool
+  public let headers: [Swift.AnyHashable : Any]
+}
+@_hasMissingDesignatedInitializers final public class SinchClientRegistration {
+  final public func register(withJWT jwt: Swift.String)
+  final public func registerDidFail(error: Swift.Error)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SinchManagedPush {
+  public static let TypeVoIP: Swift.String
+  weak final public var delegate: SinchRTC.SinchManagedPushDelegate? {
+    get
+    set
+  }
+  final public func setDesiredPushType(_ pushType: Swift.String)
+  final public func setDisplayName(_ displayName: Swift.String) throws
+  final public func didCompleteProcessingPushPayload(_ payload: [Swift.AnyHashable : Any])
+  @objc deinit
+}
+public protocol SinchManagedPushDelegate : AnyObject {
+  func managedPush(_ managedPush: SinchRTC.SinchManagedPush, didReceiveIncomingPushWithPayload payload: [Swift.AnyHashable : Any], for type: Swift.String)
+}
+public func queryPushNotificationPayload(_ payload: [Swift.AnyHashable : Any]) -> SinchRTC.SinchNotificationResult
+public func isSinchPushPayload(_ payload: [Swift.AnyHashable : Any]) -> Swift.Bool
+@_hasMissingDesignatedInitializers final public class SinchCall {
+  public enum State : Swift.String, Swift.CaseIterable {
+    case initiating
+    case progressing
+    case established
+    case ended
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [SinchRTC.SinchCall.State]
+    public typealias RawValue = Swift.String
+    public static var allCases: [SinchRTC.SinchCall.State] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  @frozen public enum Direction : Swift.String, Swift.CaseIterable {
+    case incoming
+    case outgoing
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [SinchRTC.SinchCall.Direction]
+    public typealias RawValue = Swift.String
+    public static var allCases: [SinchRTC.SinchCall.Direction] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  weak final public var delegate: SinchRTC.SinchCallDelegate? {
+    get
+    set
+  }
+  final public let callId: Swift.String
+  final public let remoteUserId: Swift.String
+  final public var details: SinchRTC.SinchCallDetails {
+    get
+  }
+  final public var state: SinchRTC.SinchCall.State {
+    get
+  }
+  final public let direction: SinchRTC.SinchCall.Direction
+  final public let headers: [Swift.AnyHashable : Any]
+  final public var userInfo: Any?
+  final public func answer()
+  final public func hangup()
+  final public func sendDTMF(key: Swift.String) -> Swift.Bool
+  final public func pauseVideo()
+  final public func resumeVideo()
+  @objc deinit
+}
+public protocol SinchCallDelegate : AnyObject {
+  func callDidEnd(_ call: SinchRTC.SinchCall)
+  func callDidProgress(_ call: SinchRTC.SinchCall)
+  func callDidEstablish(_ call: SinchRTC.SinchCall)
+  func callDidAddVideoTrack(_ call: SinchRTC.SinchCall)
+  func callDidPauseVideoTrack(_ call: SinchRTC.SinchCall)
+  func callDidResumeVideoTrack(_ call: SinchRTC.SinchCall)
+}
+extension SinchRTC.SinchCallDelegate {
+  public func callDidEnd(_ call: SinchRTC.SinchCall)
+  public func callDidProgress(_ call: SinchRTC.SinchCall)
+  public func callDidEstablish(_ call: SinchRTC.SinchCall)
+  public func callDidAddVideoTrack(_ call: SinchRTC.SinchCall)
+  public func callDidPauseVideoTrack(_ call: SinchRTC.SinchCall)
+  public func callDidResumeVideoTrack(_ call: SinchRTC.SinchCall)
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func sinIsFullscreen() -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) public func sinEnableFullscreen(animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func sinDisableFullscreen(animated: Swift.Bool)
+}
+public enum Errors : Swift.Error {
+  case clientNotStarted(Swift.String)
+}
+@frozen public enum APSEnvironment : Swift.String, Swift.CaseIterable {
+  case development
+  case production
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [SinchRTC.APSEnvironment]
+  public typealias RawValue = Swift.String
+  public static var allCases: [SinchRTC.APSEnvironment] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum LogSeverity : Swift.String, Swift.CaseIterable {
+  case trace
+  case info
+  case warning
+  case critical
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [SinchRTC.LogSeverity]
+  public typealias RawValue = Swift.String
+  public static var allCases: [SinchRTC.LogSeverity] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public func client(withApplicationKey key: Swift.String, environmentHost: Swift.String, userId: Swift.String) throws -> SinchRTC.SinchClient
+public func client(withApplicationKey key: Swift.String, environmentHost: Swift.String, userId: Swift.String, cli: Swift.String) throws -> SinchRTC.SinchClient
+public func managedPush(forAPSEnvironment environment: SinchRTC.APSEnvironment) -> SinchRTC.SinchManagedPush
+public typealias LogCallback = (_ severity: SinchRTC.LogSeverity, _ area: Swift.String, _ message: Swift.String, _ timestamp: Foundation.Date) -> Swift.Void
+public func setLogCallback(_ callback: @escaping SinchRTC.LogCallback)
+public func setDataProtectionType(_ type: Foundation.FileProtectionType)
+public func version() -> Swift.String
+@_hasMissingDesignatedInitializers final public class SinchClient {
+  weak final public var delegate: SinchRTC.SinchClientDelegate? {
+    get
+    set
+  }
+  final public let userId: Swift.String
+  final public var isStarted: Swift.Bool {
+    get
+  }
+  final public let callClient: SinchRTC.SinchCallClient
+  final public let audioController: SinchRTC.SinchAudioController
+  final public let videoController: SinchRTC.SinchVideoController
+  final public func start()
+  final public func terminateGracefully()
+  final public func setSupportPushNotifications(supported: Swift.Bool)
+  final public func enableManagedPushNotifications()
+  @discardableResult
+  final public func relayPushNotification(withUserInfo userInfo: [Swift.AnyHashable : Any]) -> SinchRTC.SinchNotificationResult
+  final public func registerPushNotificationDeviceToken(_ deviceToken: Foundation.Data, forPushType type: Swift.String, apsEnvironment: SinchRTC.APSEnvironment)
+  final public func unregisterPushNotificationDeviceToken()
+  final public func setPushNotificationDisplayName(_ displayName: Swift.String) throws
+  @objc deinit
+}
+public protocol SinchClientDelegate : AnyObject {
+  func clientRequiresRegistrationCredentials(_ client: SinchRTC.SinchClient, withCallback callback: SinchRTC.SinchClientRegistration)
+  func clientDidStart(_ client: SinchRTC.SinchClient)
+  func clientDidFail(_ client: SinchRTC.SinchClient, error: Swift.Error)
+}
+public struct SinchNotificationResult {
+  public let isValid: Swift.Bool
+  public let isCall: Swift.Bool
+  public let callResult: SinchRTC.SinchCallNotificationResult
+}
+@_hasMissingDesignatedInitializers final public class SinchAudioController {
+  weak final public var delegate: SinchRTC.SinchAudioControllerDelegate? {
+    get
+    set
+  }
+  final public func setAudioSessionCategoryOptions(_ options: AVFAudio.AVAudioSession.CategoryOptions)
+  final public func mute()
+  final public func unmute()
+  final public func enableSpeaker()
+  final public func disableSpeaker()
+  final public func startPlayingSoundFile(withPath path: Swift.String?, looping: Swift.Bool) throws
+  final public func stopPlayingSoundFile()
+  final public func configureAudioSessionForCallKitCall()
+  @objc deinit
+}
+public protocol SinchAudioControllerDelegate : AnyObject {
+  func audioControllerMuted(_ audioController: SinchRTC.SinchAudioController)
+  func audioControllerUnmuted(_ audioController: SinchRTC.SinchAudioController)
+  func audioControllerSpeakerEnabled(_ audioController: SinchRTC.SinchAudioController)
+  func audioControllerSpeakerDisabled(_ audioController: SinchRTC.SinchAudioController)
+}
+@_hasMissingDesignatedInitializers final public class SinchCallDetails {
+  public enum EndCause : Swift.String, Swift.CaseIterable {
+    case none
+    case timeout
+    case denied
+    case noAnswer
+    case error
+    case hungUp
+    case canceled
+    case otherDeviceAnswered
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [SinchRTC.SinchCallDetails.EndCause]
+    public typealias RawValue = Swift.String
+    public static var allCases: [SinchRTC.SinchCallDetails.EndCause] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  final public var startedTime: Foundation.Date? {
+    get
+  }
+  final public var establishedTime: Foundation.Date? {
+    get
+  }
+  final public var endedTime: Foundation.Date? {
+    get
+  }
+  final public var endCause: SinchRTC.SinchCallDetails.EndCause {
+    get
+  }
+  final public var error: Swift.Error? {
+    get
+  }
+  final public var isVideoOffered: Swift.Bool {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SinchCallClient {
+  weak final public var delegate: SinchRTC.SinchCallClientDelegate? {
+    get
+    set
+  }
+  final public func callUser(withId userId: Swift.String) -> Swift.Result<SinchRTC.SinchCall, Swift.Error>
+  final public func callUser(withId userId: Swift.String, usingHeaders headers: [Swift.String : Any]) -> Swift.Result<SinchRTC.SinchCall, Swift.Error>
+  final public func videoCallToUser(withId userId: Swift.String) -> Swift.Result<SinchRTC.SinchCall, Swift.Error>
+  final public func videoCallToUser(withId userId: Swift.String, usingHeaders headers: [Swift.String : Any]) -> Swift.Result<SinchRTC.SinchCall, Swift.Error>
+  final public func callPhoneNumber(_ number: Swift.String) -> Swift.Result<SinchRTC.SinchCall, Swift.Error>
+  final public func callPhoneNumber(_ number: Swift.String, usingHeaders headers: [Swift.String : Any]) -> Swift.Result<SinchRTC.SinchCall, Swift.Error>
+  final public func callSIP(_ sipIdentity: Swift.String) -> Swift.Result<SinchRTC.SinchCall, Swift.Error>
+  final public func callSIP(_ sipIdentity: Swift.String, usingHeaders headers: [Swift.String : Any]) -> Swift.Result<SinchRTC.SinchCall, Swift.Error>
+  final public func callConference(withId conferenceId: Swift.String) -> Swift.Result<SinchRTC.SinchCall, Swift.Error>
+  final public func callConference(withId conferenceId: Swift.String, usingHeaders headers: [Swift.String : Any]) -> Swift.Result<SinchRTC.SinchCall, Swift.Error>
+  final public func provider(provider: CallKit.CXProvider, didActivateAudioSession audioSession: AVFAudio.AVAudioSession)
+  final public func provider(provider: CallKit.CXProvider, didDeactivateAudioSession audioSession: AVFAudio.AVAudioSession)
+  @objc deinit
+}
+public protocol SinchCallClientDelegate : AnyObject {
+  func client(_ client: SinchRTC.SinchCallClient, didReceiveIncomingCall call: SinchRTC.SinchCall)
+}
+extension SinchRTC.SinchCallClientDelegate {
+  public func client(_ client: SinchRTC.SinchCallClient, didReceiveIncomingCall call: SinchRTC.SinchCall)
+}
+extension SinchRTC.SinchVideoController.IdleTimerState : Swift.Equatable {}
+extension SinchRTC.SinchVideoController.IdleTimerState : Swift.Hashable {}
+extension SinchRTC.SinchVideoController.IdleTimerState : Swift.RawRepresentable {}
+extension SinchRTC.SinchVideoController.IdleTimerState : Swift.Sendable {}
+extension SinchRTC.SinchCall.State : Swift.Equatable {}
+extension SinchRTC.SinchCall.State : Swift.Hashable {}
+extension SinchRTC.SinchCall.State : Swift.RawRepresentable {}
+extension SinchRTC.SinchCall.Direction : Swift.Equatable {}
+extension SinchRTC.SinchCall.Direction : Swift.Hashable {}
+extension SinchRTC.SinchCall.Direction : Swift.RawRepresentable {}
+extension SinchRTC.SinchCall.Direction : Swift.Sendable {}
+extension SinchRTC.APSEnvironment : Swift.Equatable {}
+extension SinchRTC.APSEnvironment : Swift.Hashable {}
+extension SinchRTC.APSEnvironment : Swift.RawRepresentable {}
+extension SinchRTC.APSEnvironment : Swift.Sendable {}
+extension SinchRTC.LogSeverity : Swift.Equatable {}
+extension SinchRTC.LogSeverity : Swift.Hashable {}
+extension SinchRTC.LogSeverity : Swift.RawRepresentable {}
+extension SinchRTC.SinchCallDetails.EndCause : Swift.Equatable {}
+extension SinchRTC.SinchCallDetails.EndCause : Swift.Hashable {}
+extension SinchRTC.SinchCallDetails.EndCause : Swift.RawRepresentable {}

@@ -1,0 +1,1076 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ClanPro-Medium.otf">
+            <string>ClanPro-Medium</string>
+        </array>
+        <array key="ClanPro-NarrNews.otf">
+            <string>ClanPro-NarrNews</string>
+        </array>
+        <array key="ClanPro-News.otf">
+            <string>ClanPro-News</string>
+        </array>
+        <array key="GOTHICB.TTF">
+            <string>CenturyGothic-Bold</string>
+        </array>
+        <array key="uber-clone-mobile.ttf">
+            <string>uber-clone-mobile</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Share RouteVC-->
+        <scene sceneID="cL6-X8-dYQ">
+            <objects>
+                <viewController storyboardIdentifier="ShareRouteVC" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sm2-qv-815" customClass="ShareRouteVC" customModule="DriverWallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oiY-hG-e8L"/>
+                        <viewControllerLayoutGuide type="bottom" id="hbM-ws-vyg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VoF-e2-txU" customClass="ShareRouteView" customModule="DriverWallet" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lln-XH-veS" customClass="HeaderView" customModule="DriverWallet" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="zA0-mH-tbQ">
+                                        <rect key="frame" x="15" y="0.0" width="384" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNi-jj-xSi" customClass="CustomBackBtn" customModule="DriverWallet" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="QPA-7e-R9G"/>
+                                                    <constraint firstAttribute="width" secondItem="CNi-jj-xSi" secondAttribute="height" multiplier="1:1" id="YjI-h4-bLy"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="uber-clone-mobile" family="uber-clone-mobile" pointSize="20"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onBackTapped" destination="VoF-e2-txU" eventType="touchUpInside" id="92D-nb-ZJB"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="En Route" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQh-X7-4ar" customClass="SecondaryHeaderLabel" customModule="DriverWallet" customModuleProvider="target">
+                                                <rect key="frame" x="65" y="0.0" width="319" height="50"/>
+                                                <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="19"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="zA0-mH-tbQ" secondAttribute="trailing" constant="15" id="0MP-G0-eJb"/>
+                                    <constraint firstItem="zA0-mH-tbQ" firstAttribute="leading" secondItem="lln-XH-veS" secondAttribute="leading" constant="15" id="HVv-Xd-KHq"/>
+                                    <constraint firstAttribute="bottom" secondItem="zA0-mH-tbQ" secondAttribute="bottom" id="N6l-Pk-pfg"/>
+                                    <constraint firstAttribute="height" constant="50" id="oId-MB-55q"/>
+                                    <constraint firstItem="zA0-mH-tbQ" firstAttribute="top" secondItem="lln-XH-veS" secondAttribute="top" id="pbq-ZY-eDy"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="28t-Kp-Uu1">
+                                <rect key="frame" x="0.0" y="109" width="414" height="753"/>
+                                <subviews>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8y9-eM-aJa" customClass="SecondaryInvertedView" customModule="DriverWallet" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="154" width="114" height="39"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CASH TRIP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uk7-5z-XZU" customClass="SecondaryInvertedRegularLabel" customModule="DriverWallet" customModuleProvider="target">
+                                                <rect key="frame" x="30" y="7" width="76" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="Kum-3I-Obl"/>
+                                                    <constraint firstAttribute="width" constant="76" id="qgu-H1-eY0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ClanPro-Medium" family="Clan Pro" pointSize="13"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Currency_1" translatesAutoresizingMaskIntoConstraints="NO" id="OgL-0H-pP2" customClass="SecondaryInvertedImageView" customModule="DriverWallet" customModuleProvider="target">
+                                                <rect key="frame" x="1" y="8" width="30" height="23"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="bAG-lW-dbj"/>
+                                                    <constraint firstAttribute="height" constant="23" id="yvv-K9-SQe"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="uk7-5z-XZU" firstAttribute="top" secondItem="8y9-eM-aJa" secondAttribute="top" constant="7" id="CQK-bG-Cr0"/>
+                                            <constraint firstAttribute="bottom" secondItem="uk7-5z-XZU" secondAttribute="bottom" constant="7" id="Pnb-1Q-mdx"/>
+                                            <constraint firstItem="OgL-0H-pP2" firstAttribute="leading" secondItem="8y9-eM-aJa" secondAttribute="leading" constant="1" id="RUA-LM-NZf"/>
+                                            <constraint firstAttribute="trailing" secondItem="uk7-5z-XZU" secondAttribute="trailing" constant="8" id="ivX-4g-wQg"/>
+                                            <constraint firstAttribute="height" constant="39" id="jPf-Zf-POi"/>
+                                            <constraint firstItem="uk7-5z-XZU" firstAttribute="leading" secondItem="8y9-eM-aJa" secondAttribute="leading" constant="30" id="lJa-DE-Uxj"/>
+                                            <constraint firstAttribute="width" constant="114" id="o5j-cz-ijw"/>
+                                            <constraint firstItem="OgL-0H-pP2" firstAttribute="top" secondItem="8y9-eM-aJa" secondAttribute="top" constant="8" id="txb-ws-Imt"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pJV-ef-HBU" customClass="SecondaryView" customModule="DriverWallet" customModuleProvider="target">
+                                <rect key="frame" x="20" y="133" width="374" height="110"/>
+                                <subviews>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageView:ydB-CG-qYX:image" translatesAutoresizingMaskIntoConstraints="NO" id="ydB-CG-qYX">
+                                        <rect key="frame" x="22" y="48" width="0.0" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" id="YuK-KG-olb"/>
+                                            <constraint firstAttribute="height" constant="38" id="keV-t1-jjo"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yP0-Jh-dh4" customClass="SecondaryRegularBoldLabel" customModule="DriverWallet" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="11" width="271" height="87"/>
+                                        <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GXe-6Z-Unq" customClass="SecondaryInvertedView" customModule="DriverWallet" customModuleProvider="target">
+                                        <rect key="frame" x="287" y="5" width="79" height="100"/>
+                                        <subviews>
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nze-u3-8R0">
+                                                <rect key="frame" x="0.0" y="0.0" width="1" height="100"/>
+                                                <color key="backgroundColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="1" id="Guv-qs-o4A"/>
+                                                </constraints>
+                                            </view>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass.png" translatesAutoresizingMaskIntoConstraints="NO" id="9Re-Je-v7e" customClass="PrimaryImageView" customModule="DriverWallet" customModuleProvider="target">
+                                                <rect key="frame" x="27" y="22" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="3S5-Yk-ndb"/>
+                                                    <constraint firstAttribute="width" constant="25" id="tFM-OG-aoY"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAVIGATE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPR-L6-eVC" customClass="SecondaryInvertedRegularLabel" customModule="DriverWallet" customModuleProvider="target">
+                                                <rect key="frame" x="2" y="49" width="75" height="27"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="27" id="6aK-U2-8Vj"/>
+                                                    <constraint firstAttribute="width" constant="75" id="U8w-Vd-UGO"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="12"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="localize" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvj-qX-Ief" customClass="SecondaryInvertedSmallLabel" customModule="DriverWallet" customModuleProvider="target">
+                                                <rect key="frame" x="4" y="76" width="72" height="16"/>
+                                                <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="10"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="localize" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="9Re-Je-v7e" firstAttribute="centerX" secondItem="GXe-6Z-Unq" secondAttribute="centerX" id="1VT-XZ-rQk"/>
+                                            <constraint firstItem="EPR-L6-eVC" firstAttribute="leading" secondItem="GXe-6Z-Unq" secondAttribute="leading" constant="2" id="BaB-PD-dyP"/>
+                                            <constraint firstItem="Nze-u3-8R0" firstAttribute="leading" secondItem="GXe-6Z-Unq" secondAttribute="leading" id="Cho-cG-3Ui"/>
+                                            <constraint firstAttribute="trailing" secondItem="EPR-L6-eVC" secondAttribute="trailing" constant="2" id="Doh-Pe-34f"/>
+                                            <constraint firstItem="EPR-L6-eVC" firstAttribute="top" secondItem="9Re-Je-v7e" secondAttribute="bottom" constant="2" id="FjA-GJ-K0O"/>
+                                            <constraint firstItem="Nze-u3-8R0" firstAttribute="top" secondItem="GXe-6Z-Unq" secondAttribute="top" id="MCY-7W-2lR"/>
+                                            <constraint firstItem="9Re-Je-v7e" firstAttribute="top" secondItem="GXe-6Z-Unq" secondAttribute="top" constant="22" id="OHe-QH-GC0"/>
+                                            <constraint firstItem="jvj-qX-Ief" firstAttribute="leading" secondItem="Nze-u3-8R0" secondAttribute="trailing" constant="3" id="ZRn-7h-TQ2"/>
+                                            <constraint firstAttribute="bottom" secondItem="jvj-qX-Ief" secondAttribute="bottom" constant="8" id="ZUg-pn-lna"/>
+                                            <constraint firstAttribute="trailing" secondItem="jvj-qX-Ief" secondAttribute="trailing" constant="3" id="ZqF-ni-G1l"/>
+                                            <constraint firstAttribute="bottom" secondItem="Nze-u3-8R0" secondAttribute="bottom" id="j4c-ra-k5s"/>
+                                            <constraint firstItem="jvj-qX-Ief" firstAttribute="top" secondItem="EPR-L6-eVC" secondAttribute="bottom" id="lii-Vl-3k5"/>
+                                            <constraint firstAttribute="height" constant="100" id="qRu-LR-QQ4"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="GXe-6Z-Unq" firstAttribute="leading" secondItem="yP0-Jh-dh4" secondAttribute="trailing" constant="8" id="0mo-gj-nEY"/>
+                                    <constraint firstAttribute="trailing" secondItem="GXe-6Z-Unq" secondAttribute="trailing" constant="8" id="D2R-T6-gdp"/>
+                                    <constraint firstItem="ydB-CG-qYX" firstAttribute="leading" secondItem="pJV-ef-HBU" secondAttribute="leading" constant="22" id="Itk-Io-96y"/>
+                                    <constraint firstAttribute="height" constant="110" id="Kwm-z0-2ps"/>
+                                    <constraint firstItem="yP0-Jh-dh4" firstAttribute="leading" secondItem="pJV-ef-HBU" secondAttribute="leading" constant="8" id="Nmn-03-OaN"/>
+                                    <constraint firstAttribute="bottom" secondItem="GXe-6Z-Unq" secondAttribute="bottom" constant="5" id="Obu-Xy-xgr"/>
+                                    <constraint firstItem="yP0-Jh-dh4" firstAttribute="top" secondItem="pJV-ef-HBU" secondAttribute="top" constant="11" id="QOW-kL-PjQ"/>
+                                    <constraint firstItem="GXe-6Z-Unq" firstAttribute="top" secondItem="pJV-ef-HBU" secondAttribute="top" constant="5" id="bao-Z1-H8G"/>
+                                    <constraint firstItem="ydB-CG-qYX" firstAttribute="top" secondItem="pJV-ef-HBU" secondAttribute="top" constant="48" id="n5R-oV-Ixq"/>
+                                    <constraint firstAttribute="bottom" secondItem="yP0-Jh-dh4" secondAttribute="bottom" constant="12" id="pRQ-I1-4ya"/>
+                                    <constraint firstItem="GXe-6Z-Unq" firstAttribute="leading" secondItem="yP0-Jh-dh4" secondAttribute="trailing" constant="8" id="uK3-I8-lJR"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="36W-iq-8Uk" customClass="SecondaryView" customModule="DriverWallet" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="697" width="414" height="30"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bar" translatesAutoresizingMaskIntoConstraints="NO" id="Tv4-eX-3j6" customClass="PrimaryImageView" customModule="DriverWallet" customModuleProvider="target">
+                                        <rect key="frame" x="182" y="1" width="50" height="15"/>
+                                        <color key="tintColor" name="ThemeYellow"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="DUg-cp-mDX"/>
+                                            <constraint firstAttribute="height" constant="15" id="f6t-mq-uaQ"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Tv4-eX-3j6" firstAttribute="centerX" secondItem="36W-iq-8Uk" secondAttribute="centerX" id="3DI-97-wY0"/>
+                                    <constraint firstAttribute="height" constant="30" id="7Xj-SN-8iJ"/>
+                                    <constraint firstItem="Tv4-eX-3j6" firstAttribute="top" secondItem="36W-iq-8Uk" secondAttribute="top" constant="1" id="N14-fl-FbJ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1MI-Fk-nGT" customClass="SecondaryView" customModule="DriverWallet" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="712" width="414" height="200"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="45N-UJ-TvX" customClass="CommonTableView" customModule="DriverWallet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="h8r-pN-tFG"/>
+                                        </constraints>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CoShareRiderTVC" rowHeight="57" id="5aM-48-fSr" customClass="CoShareRiderTVC" customModule="DriverWallet" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="44.5" width="414" height="57"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5aM-48-fSr" id="I5K-gH-EkL">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="57"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="umD-Bb-FtG">
+                                                            <rect key="frame" x="8" y="5" width="47" height="47"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="umD-Bb-FtG" secondAttribute="height" multiplier="1:1" id="JVP-QF-HKv"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Af3-6p-fhJ">
+                                                            <rect key="frame" x="63" y="5" width="343" height="47"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRG-7e-8MP" customClass="SecondaryRegularBoldLabel" customModule="DriverWallet" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="249" height="21"/>
+                                                                    <fontDescription key="fontDescription" name="ClanPro-Medium" family="Clan Pro" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="localize" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </label>
+                                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pYW-1S-qzH">
+                                                                    <rect key="frame" x="0.0" y="23.5" width="17" height="0.0"/>
+                                                                    <attributedString key="attributedText">
+                                                                        <fragment content="3.3">
+                                                                            <attributes>
+                                                                                <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                    <nil key="highlightedColor"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="localize" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </label>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cVS-EN-0il">
+                                                                    <rect key="frame" x="0.0" y="26" width="145" height="21"/>
+                                                                    <subviews>
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HWD-X3-TNh">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="16" height="21"/>
+                                                                            <subviews>
+                                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TCH-af-c4F" customClass="PrimaryImageView" customModule="DriverWallet" customModuleProvider="target">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="16" height="21"/>
+                                                                                </imageView>
+                                                                            </subviews>
+                                                                            <constraints>
+                                                                                <constraint firstItem="TCH-af-c4F" firstAttribute="top" secondItem="HWD-X3-TNh" secondAttribute="top" id="Dsi-v5-PDc"/>
+                                                                                <constraint firstItem="TCH-af-c4F" firstAttribute="leading" secondItem="HWD-X3-TNh" secondAttribute="leading" id="PIP-gd-sQh"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="TCH-af-c4F" secondAttribute="trailing" id="VBa-61-nQ2"/>
+                                                                                <constraint firstAttribute="width" secondItem="HWD-X3-TNh" secondAttribute="height" multiplier="1:1" id="grJ-Wj-zCg"/>
+                                                                                <constraint firstAttribute="bottom" secondItem="TCH-af-c4F" secondAttribute="bottom" id="u8L-KG-Fin"/>
+                                                                                <constraint firstAttribute="width" constant="16" id="vhY-3e-uAd"/>
+                                                                            </constraints>
+                                                                        </view>
+                                                                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5G-nX-izV" customClass="TransparentPrimaryButton" customModule="DriverWallet" customModuleProvider="target">
+                                                                            <rect key="frame" x="26" y="0.0" width="119" height="21"/>
+                                                                            <state key="normal" title="Send Message">
+                                                                                <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </state>
+                                                                        </button>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Anb-fM-Rln">
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="57"/>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="Af3-6p-fhJ" firstAttribute="leading" secondItem="umD-Bb-FtG" secondAttribute="trailing" constant="8" id="0f1-lc-e2l"/>
+                                                        <constraint firstItem="Anb-fM-Rln" firstAttribute="top" secondItem="I5K-gH-EkL" secondAttribute="top" id="4cy-r5-frT"/>
+                                                        <constraint firstItem="Anb-fM-Rln" firstAttribute="leading" secondItem="I5K-gH-EkL" secondAttribute="leading" id="5CN-Sm-yPU"/>
+                                                        <constraint firstItem="umD-Bb-FtG" firstAttribute="top" secondItem="I5K-gH-EkL" secondAttribute="top" constant="5" id="90M-gA-vra"/>
+                                                        <constraint firstItem="Af3-6p-fhJ" firstAttribute="top" secondItem="I5K-gH-EkL" secondAttribute="top" constant="5" id="Jz8-S2-VKM"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Anb-fM-Rln" secondAttribute="bottom" id="YdI-np-zle"/>
+                                                        <constraint firstItem="umD-Bb-FtG" firstAttribute="leading" secondItem="I5K-gH-EkL" secondAttribute="leading" constant="8" id="ewn-eL-nUR"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Anb-fM-Rln" secondAttribute="trailing" id="ky0-nL-4hv"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Af3-6p-fhJ" secondAttribute="trailing" constant="8" id="tTR-4L-apM"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Af3-6p-fhJ" secondAttribute="bottom" constant="5" id="x9w-8U-Icx"/>
+                                                        <constraint firstAttribute="bottom" secondItem="umD-Bb-FtG" secondAttribute="bottom" constant="5" id="zf9-hM-lwZ"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="changeBtn" destination="Anb-fM-Rln" id="FqZ-gC-kp6"/>
+                                                    <outlet property="messageIcon" destination="TCH-af-c4F" id="l9J-iO-iVw"/>
+                                                    <outlet property="messageIconView" destination="HWD-X3-TNh" id="57h-4q-JlT"/>
+                                                    <outlet property="messageStack" destination="cVS-EN-0il" id="DWu-UZ-nLZ"/>
+                                                    <outlet property="nameLbl" destination="BRG-7e-8MP" id="8aw-6s-ieD"/>
+                                                    <outlet property="sendMessageBtn" destination="V5G-nX-izV" id="6SE-t3-Az8"/>
+                                                    <outlet property="thumbIV" destination="umD-Bb-FtG" id="OpE-tb-5C0"/>
+                                                </connections>
+                                            </tableViewCell>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShareRiderTVC" rowHeight="57" id="ewL-sM-Iwf" customClass="ShareRiderTVC" customModule="DriverWallet" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="101.5" width="414" height="57"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ewL-sM-Iwf" id="NEB-qL-zQc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="57"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="AYk-Y6-zze">
+                                                            <rect key="frame" x="15" y="3" width="311" height="51"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXk-c8-gwt" customClass="SecondaryRegularBoldLabel" customModule="DriverWallet" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="217" height="13.5"/>
+                                                                    <fontDescription key="fontDescription" name="ClanPro-Medium" family="Clan Pro" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="localize" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6S-EM-w5v" customClass="SecondarySmallBoldLabel" customModule="DriverWallet" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="18.5" width="17" height="14"/>
+                                                                    <attributedString key="attributedText">
+                                                                        <fragment content="3.3">
+                                                                            <attributes>
+                                                                                <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                    <nil key="highlightedColor"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="localize" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </label>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5mb-99-7hS">
+                                                                    <rect key="frame" x="0.0" y="37.5" width="142.5" height="13.5"/>
+                                                                    <subviews>
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aH9-y4-yu3">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="13.5" height="13.5"/>
+                                                                            <subviews>
+                                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5RM-uP-ERq" customClass="PrimaryImageView" customModule="DriverWallet" customModuleProvider="target">
+                                                                                    <rect key="frame" x="5" y="5" width="3.5" height="3.5"/>
+                                                                                </imageView>
+                                                                            </subviews>
+                                                                            <constraints>
+                                                                                <constraint firstItem="5RM-uP-ERq" firstAttribute="leading" secondItem="aH9-y4-yu3" secondAttribute="leading" constant="5" id="E9y-Pc-2DA"/>
+                                                                                <constraint firstAttribute="bottom" secondItem="5RM-uP-ERq" secondAttribute="bottom" constant="5" id="al4-kd-FVg"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="5RM-uP-ERq" secondAttribute="trailing" constant="5" id="cM7-z1-NZj"/>
+                                                                                <constraint firstItem="5RM-uP-ERq" firstAttribute="top" secondItem="aH9-y4-yu3" secondAttribute="top" constant="5" id="g9c-Cc-Jxu"/>
+                                                                                <constraint firstAttribute="width" secondItem="aH9-y4-yu3" secondAttribute="height" multiplier="1:1" id="wi3-94-jiA"/>
+                                                                            </constraints>
+                                                                        </view>
+                                                                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biU-KS-tF9" customClass="TransparentPrimaryButton" customModule="DriverWallet" customModuleProvider="target">
+                                                                            <rect key="frame" x="23.5" y="0.0" width="119" height="13.5"/>
+                                                                            <state key="normal" title="Send Message">
+                                                                                <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </state>
+                                                                        </button>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4U1-Qq-kEe">
+                                                            <rect key="frame" x="339" y="-1.5" width="60" height="60"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="4U1-Qq-kEe" secondAttribute="height" multiplier="1:1" id="ONZ-kq-Z3H"/>
+                                                                <constraint firstAttribute="height" constant="60" id="jbL-2R-YAi"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="CNn-ZA-4IG">
+                                                            <rect key="frame" x="334" y="3" width="0.0" height="51"/>
+                                                            <subviews>
+                                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhB-vX-LKW">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="62" height="0.0"/>
+                                                                    <color key="backgroundColor" red="0.0" green="0.58823529409999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <state key="normal" title="Call">
+                                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </state>
+                                                                </button>
+                                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISI-Nq-qmu">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="62" height="0.0"/>
+                                                                    <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <state key="normal" title="Message">
+                                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </state>
+                                                                </button>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" id="f2g-w4-7if"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="AYk-Y6-zze" firstAttribute="top" secondItem="NEB-qL-zQc" secondAttribute="top" constant="3" id="487-vw-KzC"/>
+                                                        <constraint firstItem="CNn-ZA-4IG" firstAttribute="top" secondItem="NEB-qL-zQc" secondAttribute="top" constant="3" id="7sM-rS-y9C"/>
+                                                        <constraint firstAttribute="bottom" secondItem="AYk-Y6-zze" secondAttribute="bottom" constant="3" id="D5A-Kd-6pq"/>
+                                                        <constraint firstItem="4U1-Qq-kEe" firstAttribute="leading" secondItem="CNn-ZA-4IG" secondAttribute="trailing" constant="5" id="MWs-VS-Ns0"/>
+                                                        <constraint firstAttribute="trailing" secondItem="4U1-Qq-kEe" secondAttribute="trailing" constant="15" id="X5p-8W-5vD"/>
+                                                        <constraint firstAttribute="bottom" secondItem="CNn-ZA-4IG" secondAttribute="bottom" constant="3" id="hMt-rh-wMu"/>
+                                                        <constraint firstItem="AYk-Y6-zze" firstAttribute="leading" secondItem="NEB-qL-zQc" secondAttribute="leading" constant="15" id="jee-fc-1BR"/>
+                                                        <constraint firstItem="4U1-Qq-kEe" firstAttribute="centerY" secondItem="NEB-qL-zQc" secondAttribute="centerY" id="jjf-b6-JeB"/>
+                                                        <constraint firstItem="CNn-ZA-4IG" firstAttribute="leading" secondItem="AYk-Y6-zze" secondAttribute="trailing" constant="8" id="rRm-2s-swf"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="callBtn" destination="IhB-vX-LKW" id="QKC-XO-M9k"/>
+                                                    <outlet property="messageBtn" destination="ISI-Nq-qmu" id="CFl-27-v7M"/>
+                                                    <outlet property="messageIcon" destination="5RM-uP-ERq" id="UzZ-iB-F3a"/>
+                                                    <outlet property="messageIconView" destination="aH9-y4-yu3" id="PWU-Rd-7UP"/>
+                                                    <outlet property="messageStack" destination="5mb-99-7hS" id="UAI-yd-ARD"/>
+                                                    <outlet property="nameLbl" destination="dXk-c8-gwt" id="KIL-Ju-ppy"/>
+                                                    <outlet property="ratingLbl" destination="A6S-EM-w5v" id="Knb-EC-oO4"/>
+                                                    <outlet property="sendMessageBtn" destination="biU-KS-tF9" id="pPm-Ej-fHM"/>
+                                                    <outlet property="thumbIV" destination="4U1-Qq-kEe" id="gC5-mI-PdR"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="45N-UJ-TvX" secondAttribute="bottom" id="BN2-wz-Qkx"/>
+                                    <constraint firstItem="45N-UJ-TvX" firstAttribute="leading" secondItem="1MI-Fk-nGT" secondAttribute="leading" id="OMP-IO-MNq"/>
+                                    <constraint firstAttribute="trailing" secondItem="45N-UJ-TvX" secondAttribute="trailing" id="awU-dQ-4iL"/>
+                                    <constraint firstItem="45N-UJ-TvX" firstAttribute="top" secondItem="1MI-Fk-nGT" secondAttribute="top" id="nB0-ft-Isg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BsY-MG-Iaz"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pJV-ef-HBU" firstAttribute="leading" secondItem="BsY-MG-Iaz" secondAttribute="leading" constant="20" id="3Lg-5Z-2fW"/>
+                            <constraint firstItem="pJV-ef-HBU" firstAttribute="trailing" secondItem="BsY-MG-Iaz" secondAttribute="trailing" constant="-20" id="3t2-LI-3Va"/>
+                            <constraint firstItem="28t-Kp-Uu1" firstAttribute="leading" secondItem="BsY-MG-Iaz" secondAttribute="leading" id="3zR-Vc-H16"/>
+                            <constraint firstItem="1MI-Fk-nGT" firstAttribute="trailing" secondItem="BsY-MG-Iaz" secondAttribute="trailing" id="40H-rU-A1S"/>
+                            <constraint firstItem="36W-iq-8Uk" firstAttribute="centerY" secondItem="1MI-Fk-nGT" secondAttribute="top" id="BjQ-CJ-Vix"/>
+                            <constraint firstItem="36W-iq-8Uk" firstAttribute="trailing" secondItem="1MI-Fk-nGT" secondAttribute="trailing" id="EHU-jf-0Zz"/>
+                            <constraint firstItem="BsY-MG-Iaz" firstAttribute="bottom" secondItem="28t-Kp-Uu1" secondAttribute="bottom" id="FC7-OM-AtF"/>
+                            <constraint firstItem="lln-XH-veS" firstAttribute="trailing" secondItem="BsY-MG-Iaz" secondAttribute="trailing" id="Fdc-7X-bqm"/>
+                            <constraint firstItem="36W-iq-8Uk" firstAttribute="leading" secondItem="1MI-Fk-nGT" secondAttribute="leading" id="NX1-Vn-piR"/>
+                            <constraint firstItem="28t-Kp-Uu1" firstAttribute="top" secondItem="lln-XH-veS" secondAttribute="bottom" constant="15" id="Olr-gF-5kb"/>
+                            <constraint firstItem="1MI-Fk-nGT" firstAttribute="top" secondItem="BsY-MG-Iaz" secondAttribute="bottom" constant="-150" id="Qlf-07-r1u"/>
+                            <constraint firstItem="BsY-MG-Iaz" firstAttribute="trailing" secondItem="28t-Kp-Uu1" secondAttribute="trailing" id="Qth-1n-ZBo"/>
+                            <constraint firstItem="1MI-Fk-nGT" firstAttribute="leading" secondItem="BsY-MG-Iaz" secondAttribute="leading" id="UBd-px-W31"/>
+                            <constraint firstItem="pJV-ef-HBU" firstAttribute="top" secondItem="oiY-hG-e8L" secondAttribute="bottom" constant="89" id="UIu-yP-OQQ"/>
+                            <constraint firstItem="8y9-eM-aJa" firstAttribute="top" secondItem="pJV-ef-HBU" secondAttribute="bottom" constant="20" id="i57-KK-P5I"/>
+                            <constraint firstItem="lln-XH-veS" firstAttribute="top" secondItem="BsY-MG-Iaz" secondAttribute="top" id="qQn-9g-tMv"/>
+                            <constraint firstItem="lln-XH-veS" firstAttribute="leading" secondItem="BsY-MG-Iaz" secondAttribute="leading" id="saH-mq-Jc6"/>
+                            <constraint firstItem="8y9-eM-aJa" firstAttribute="leading" secondItem="pJV-ef-HBU" secondAttribute="leading" id="tpf-nv-dj3"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="backBtn" destination="CNi-jj-xSi" id="uqE-m7-g5L"/>
+                            <outlet property="barIV" destination="Tv4-eX-3j6" id="LCg-uT-b5V"/>
+                            <outlet property="barView" destination="36W-iq-8Uk" id="ero-eC-GOt"/>
+                            <outlet property="cashImg" destination="OgL-0H-pP2" id="3oz-H0-64A"/>
+                            <outlet property="cashTripLbl" destination="uk7-5z-XZU" id="x8O-Gx-UTK"/>
+                            <outlet property="cashView" destination="8y9-eM-aJa" id="ktY-Es-NNu"/>
+                            <outlet property="enRouteLbl" destination="aQh-X7-4ar" id="mN4-at-9fQ"/>
+                            <outlet property="etaLbl" destination="jvj-qX-Ief" id="wvL-CH-qtM"/>
+                            <outlet property="googleMap" destination="28t-Kp-Uu1" id="KqA-Tc-JGG"/>
+                            <outlet property="headerView" destination="lln-XH-veS" id="5qS-gv-F3P"/>
+                            <outlet property="lblLocationName" destination="yP0-Jh-dh4" id="GOH-96-lvf"/>
+                            <outlet property="navigateLabel" destination="EPR-L6-eVC" id="Mye-qr-4s5"/>
+                            <outlet property="navigationImage" destination="9Re-Je-v7e" id="QRs-cO-N27"/>
+                            <outlet property="navigationView" destination="GXe-6Z-Unq" id="RW5-0I-8BG"/>
+                            <outlet property="riderTableHeight" destination="h8r-pN-tFG" id="2Vv-ba-Rcq"/>
+                            <outlet property="riderTableView" destination="45N-UJ-TvX" id="n5L-VE-94J"/>
+                            <outlet property="riderTblHolderView" destination="1MI-Fk-nGT" id="KL8-ol-QcF"/>
+                            <outlet property="viewAddressHoder" destination="pJV-ef-HBU" id="OAb-UU-lUO"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="Rty-MN-lNL"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="shareRouteView" destination="VoF-e2-txU" id="X1c-NZ-c12"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1g2-0k-hUj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6421.739130434783" y="-75"/>
+        </scene>
+        <!--Gofer Rider ProfileVC-->
+        <scene sceneID="55z-xL-ms0">
+            <objects>
+                <viewController storyboardIdentifier="GoferRiderProfileVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="i1O-cL-RTW" customClass="GoferRiderProfileVC" customModule="DriverWallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g4S-x4-tXA"/>
+                        <viewControllerLayoutGuide type="bottom" id="yoG-yM-QA5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aeT-Dr-91U" customClass="GoferRiderProfileView" customModule="DriverWallet" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z6h-HD-TcF" customClass="HeaderView" customModule="DriverWallet" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZh-Fu-MNK" customClass="CustomBackBtn" customModule="DriverWallet" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="4Lp-F2-U2J"/>
+                                            <constraint firstAttribute="width" secondItem="AZh-Fu-MNK" secondAttribute="height" multiplier="1:1" id="Xvo-Uz-eY8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backBtnClicked" destination="aeT-Dr-91U" eventType="touchUpInside" id="oJN-TC-Jar"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="En Route" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOM-6x-2Ca" customClass="SecondaryHeaderLabel" customModule="DriverWallet" customModuleProvider="target">
+                                        <rect key="frame" x="90" y="0.0" width="71" height="50"/>
+                                        <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="QOM-6x-2Ca" secondAttribute="bottom" id="JJ0-lO-Q8M"/>
+                                    <constraint firstAttribute="height" constant="50" id="RgB-9g-2mT"/>
+                                    <constraint firstItem="QOM-6x-2Ca" firstAttribute="leading" secondItem="AZh-Fu-MNK" secondAttribute="trailing" constant="25" id="g28-P5-PnP"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QOM-6x-2Ca" secondAttribute="trailing" constant="15" id="iAf-nm-2sh"/>
+                                    <constraint firstItem="QOM-6x-2Ca" firstAttribute="top" secondItem="z6h-HD-TcF" secondAttribute="top" id="jNi-hK-0aL"/>
+                                    <constraint firstItem="AZh-Fu-MNK" firstAttribute="centerY" secondItem="z6h-HD-TcF" secondAttribute="centerY" id="tbP-ad-5p2"/>
+                                    <constraint firstItem="AZh-Fu-MNK" firstAttribute="leading" secondItem="z6h-HD-TcF" secondAttribute="leading" constant="15" id="wNr-Ee-iVB"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TCa-wV-j4g" customClass="SecondaryView" customModule="DriverWallet" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="109" width="414" height="787"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="90" sectionHeaderHeight="108" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dao-yI-SZK" customClass="CommonTableView" customModule="DriverWallet" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="15" width="384" height="723"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <view key="tableHeaderView" contentMode="scaleToFill" id="nGv-Jd-Drw">
+                                            <rect key="frame" x="0.0" y="0.0" width="384" height="350"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jbn-cL-ZPb">
+                                                    <rect key="frame" x="15" y="36.5" width="10" height="10"/>
+                                                    <color key="backgroundColor" red="0.1843137255" green="0.6588235294" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="10" id="ntQ-SM-wTU"/>
+                                                        <constraint firstAttribute="height" constant="10" id="re6-te-W0c"/>
+                                                    </constraints>
+                                                </view>
+                                                <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ihU-Wh-8aT">
+                                                    <rect key="frame" x="19.5" y="46.5" width="1" height="303.5"/>
+                                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="1" id="xAU-wO-qrY"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUU-q7-y34" customClass="SecondaryView" customModule="DriverWallet" customModuleProvider="target">
+                                                    <rect key="frame" x="34" y="15" width="325" height="320"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PICK UP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wpt-ly-dD5" customClass="SecondarySubHeaderLabel" customModule="DriverWallet" customModuleProvider="target">
+                                                            <rect key="frame" x="15" y="17" width="77" height="19"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="77" id="fLm-z1-eKj"/>
+                                                                <constraint firstAttribute="height" constant="19" id="pZU-3c-Qkd"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="ClanPro-NarrNews" family="Clan Pro" pointSize="15"/>
+                                                            <color key="textColor" red="0.1843137255" green="0.6588235294" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="localize" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="          " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3YW-ok-KbR" customClass="SecondarySubHeaderLabel" customModule="DriverWallet" customModuleProvider="target">
+                                                            <rect key="frame" x="15" y="36" width="54" height="20"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="20" id="jLB-Ga-op3"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="18"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nuU-XL-cRp">
+                                                            <rect key="frame" x="235" y="15" width="80" height="80"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="80" id="GdH-LN-xXV"/>
+                                                                <constraint firstAttribute="height" constant="80" id="uUC-Ym-8OI"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U8O-7B-ZkY">
+                                                            <rect key="frame" x="15" y="66" width="210" height="1"/>
+                                                            <color key="backgroundColor" red="0.62745098040000002" green="0.62745098040000002" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="1" id="TRf-c6-1a1"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSX-0D-IP5">
+                                                            <rect key="frame" x="250" y="90" width="23" height="22"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="23" id="BmJ-zX-SiC"/>
+                                                                <constraint firstAttribute="height" constant="22" id="hhw-i2-MYr"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="uber-clone-mobile" family="uber-clone-mobile" pointSize="21"/>
+                                                            <color key="textColor" red="0.63529411759999999" green="0.63529411759999999" blue="0.65490196079999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWy-Kz-gtV">
+                                                            <rect key="frame" x="267" y="86" width="41" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="41" id="SfY-BK-hye"/>
+                                                                <constraint firstAttribute="height" constant="30" id="sQf-6e-eNF"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="15"/>
+                                                            <color key="textColor" red="0.63529411759999999" green="0.63529411759999999" blue="0.65490196079999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="G" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnW-pv-OmV">
+                                                            <rect key="frame" x="0.0" y="132.5" width="42" height="43"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="42" id="28F-Gm-8Gr"/>
+                                                                <constraint firstAttribute="height" constant="43" id="ZVW-PX-tTC"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="uber-clone-mobile" family="uber-clone-mobile" pointSize="17"/>
+                                                            <color key="textColor" red="0.63529411759999999" green="0.63529411759999999" blue="0.65490196079999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBb-uu-1OE">
+                                                            <rect key="frame" x="83" y="44" width="42" height="18"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="42" id="RLd-S1-b38"/>
+                                                                <constraint firstAttribute="height" constant="18" id="Rj3-Kt-sbz"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zb-Xg-qJO" customClass="InactiveRegularLabel" customModule="DriverWallet" customModuleProvider="target">
+                                                            <rect key="frame" x="52" y="67" width="186" height="30"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="30" id="9GW-V9-Jmw"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="15"/>
+                                                            <color key="textColor" red="0.63529411759999999" green="0.63529411759999999" blue="0.65490196079999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyP-Eo-O3f" customClass="SecondaryRegularBoldLabel" customModule="DriverWallet" customModuleProvider="target">
+                                                            <rect key="frame" x="47" y="99.5" width="259" height="108.5"/>
+                                                            <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="17"/>
+                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jop-NO-sjV">
+                                                            <rect key="frame" x="15" y="104.5" width="295" height="1"/>
+                                                            <color key="backgroundColor" red="0.62745098040000002" green="0.62745098040000002" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="1" id="2KU-Zq-46Y"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DFw-Se-B90">
+                                                            <rect key="frame" x="0.0" y="209" width="325" height="106"/>
+                                                            <subviews>
+                                                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IDz-dQ-5T8">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                                                                    <color key="backgroundColor" red="0.62745098040000002" green="0.62745098040000002" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="1" id="IcS-2d-BoX"/>
+                                                                    </constraints>
+                                                                </view>
+                                                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cwL-Js-Q56">
+                                                                    <rect key="frame" x="324" y="0.0" width="1" height="106"/>
+                                                                    <color key="backgroundColor" red="0.62745098040000002" green="0.62745098040000002" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="1" id="77s-uV-utR"/>
+                                                                    </constraints>
+                                                                </view>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Xd2-Ba-GKz">
+                                                                    <rect key="frame" x="10" y="1" width="304" height="105"/>
+                                                                    <subviews>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="cWv-sf-LEa">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="304" height="45"/>
+                                                                            <subviews>
+                                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06g-KY-Uzr" customClass="SecondaryButton" customModule="DriverWallet" customModuleProvider="target">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="144.5" height="45"/>
+                                                                                    <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="13"/>
+                                                                                    <state key="normal">
+                                                                                        <color key="titleColor" red="0.1215686275" green="0.72941176470000002" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                    </state>
+                                                                                    <connections>
+                                                                                        <action selector="callBtnClicked" destination="aeT-Dr-91U" eventType="touchUpInside" id="eSd-XC-XOz"/>
+                                                                                    </connections>
+                                                                                </button>
+                                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4M-Xo-Iuw" customClass="PrimaryButton" customModule="DriverWallet" customModuleProvider="target">
+                                                                                    <rect key="frame" x="159.5" y="0.0" width="144.5" height="45"/>
+                                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                                    <state key="normal" title="Button"/>
+                                                                                    <connections>
+                                                                                        <action selector="messageBtnClicked" destination="aeT-Dr-91U" eventType="touchUpInside" id="zZG-zb-tY0"/>
+                                                                                    </connections>
+                                                                                </button>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mS2-BR-cmz" customClass="PrimaryButton" customModule="DriverWallet" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="60" width="304" height="45"/>
+                                                                            <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="13"/>
+                                                                            <state key="normal">
+                                                                                <color key="titleColor" red="0.1215686275" green="0.72941176470000002" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </state>
+                                                                            <connections>
+                                                                                <action selector="onCancelTapped" destination="aeT-Dr-91U" eventType="touchUpInside" id="NAl-Qp-wda"/>
+                                                                            </connections>
+                                                                        </button>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="106" id="2eJ-Qf-mxW"/>
+                                                                <constraint firstAttribute="trailing" secondItem="cwL-Js-Q56" secondAttribute="trailing" id="7eG-3d-Egt"/>
+                                                                <constraint firstItem="cwL-Js-Q56" firstAttribute="leading" secondItem="Xd2-Ba-GKz" secondAttribute="trailing" constant="10" id="OAJ-3W-NP4"/>
+                                                                <constraint firstItem="Xd2-Ba-GKz" firstAttribute="leading" secondItem="DFw-Se-B90" secondAttribute="leading" constant="10" id="SRy-lF-LCZ"/>
+                                                                <constraint firstAttribute="trailing" secondItem="IDz-dQ-5T8" secondAttribute="trailing" constant="5" id="aEl-Ln-Mw8"/>
+                                                                <constraint firstAttribute="bottom" secondItem="cwL-Js-Q56" secondAttribute="bottom" id="nwa-n5-66C"/>
+                                                                <constraint firstItem="IDz-dQ-5T8" firstAttribute="top" secondItem="DFw-Se-B90" secondAttribute="top" id="sVX-cb-430"/>
+                                                                <constraint firstItem="IDz-dQ-5T8" firstAttribute="leading" secondItem="DFw-Se-B90" secondAttribute="leading" id="uZ7-DF-hTV"/>
+                                                                <constraint firstAttribute="bottom" secondItem="Xd2-Ba-GKz" secondAttribute="bottom" id="wud-2o-kqz"/>
+                                                                <constraint firstItem="cwL-Js-Q56" firstAttribute="top" secondItem="DFw-Se-B90" secondAttribute="top" id="y1k-aH-gSq"/>
+                                                                <constraint firstItem="Xd2-Ba-GKz" firstAttribute="top" secondItem="IDz-dQ-5T8" secondAttribute="bottom" id="zGo-0i-Hi6"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car01.png" translatesAutoresizingMaskIntoConstraints="NO" id="BeU-za-yB7">
+                                                            <rect key="frame" x="15" y="69.5" width="25" height="25"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="25" id="Nyk-vl-zBf"/>
+                                                                <constraint firstAttribute="width" constant="25" id="PMy-nA-DeN"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="Jop-NO-sjV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6zb-Xg-qJO" secondAttribute="bottom" constant="2" id="1Dh-7z-Rew"/>
+                                                        <constraint firstItem="6zb-Xg-qJO" firstAttribute="top" secondItem="U8O-7B-ZkY" secondAttribute="bottom" id="2hy-01-gwk"/>
+                                                        <constraint firstItem="JSX-0D-IP5" firstAttribute="leading" secondItem="6zb-Xg-qJO" secondAttribute="trailing" constant="12" id="4v9-cY-Y7D"/>
+                                                        <constraint firstItem="Wpt-ly-dD5" firstAttribute="top" secondItem="gUU-q7-y34" secondAttribute="top" constant="17" id="EHh-HX-VXf"/>
+                                                        <constraint firstItem="nuU-XL-cRp" firstAttribute="top" secondItem="gUU-q7-y34" secondAttribute="top" constant="15" id="Fp5-aF-bng"/>
+                                                        <constraint firstItem="DFw-Se-B90" firstAttribute="leading" secondItem="gUU-q7-y34" secondAttribute="leading" id="Gie-HO-c0b"/>
+                                                        <constraint firstAttribute="trailing" secondItem="DFw-Se-B90" secondAttribute="trailing" id="IDq-uU-Xw5"/>
+                                                        <constraint firstItem="Wpt-ly-dD5" firstAttribute="leading" secondItem="gUU-q7-y34" secondAttribute="leading" constant="15" id="IIz-y7-bdQ"/>
+                                                        <constraint firstItem="Jop-NO-sjV" firstAttribute="top" secondItem="BeU-za-yB7" secondAttribute="bottom" constant="10" id="LLI-ui-PIu"/>
+                                                        <constraint firstItem="oyP-Eo-O3f" firstAttribute="top" secondItem="BeU-za-yB7" secondAttribute="bottom" constant="5" id="LXL-6o-L9u"/>
+                                                        <constraint firstItem="oyP-Eo-O3f" firstAttribute="leading" secondItem="pnW-pv-OmV" secondAttribute="trailing" constant="5" id="MzR-IG-bg1"/>
+                                                        <constraint firstItem="SWy-Kz-gtV" firstAttribute="top" secondItem="U8O-7B-ZkY" secondAttribute="bottom" constant="19" id="PuW-sB-dr2"/>
+                                                        <constraint firstAttribute="trailing" secondItem="SWy-Kz-gtV" secondAttribute="trailing" constant="17" id="QVw-EO-m1c"/>
+                                                        <constraint firstItem="6zb-Xg-qJO" firstAttribute="leading" secondItem="BeU-za-yB7" secondAttribute="trailing" constant="12" id="RP9-55-XAq"/>
+                                                        <constraint firstItem="pnW-pv-OmV" firstAttribute="leading" secondItem="gUU-q7-y34" secondAttribute="leading" id="RuF-uk-mVR"/>
+                                                        <constraint firstItem="3YW-ok-KbR" firstAttribute="leading" secondItem="gUU-q7-y34" secondAttribute="leading" constant="15" id="SRu-35-R2e"/>
+                                                        <constraint firstItem="nuU-XL-cRp" firstAttribute="leading" secondItem="U8O-7B-ZkY" secondAttribute="trailing" constant="10" id="TcA-ft-IS9"/>
+                                                        <constraint firstItem="BeU-za-yB7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="U8O-7B-ZkY" secondAttribute="bottom" id="VWR-u3-LTJ"/>
+                                                        <constraint firstItem="oyP-Eo-O3f" firstAttribute="centerY" secondItem="pnW-pv-OmV" secondAttribute="centerY" id="VcB-Vs-7RH"/>
+                                                        <constraint firstItem="U8O-7B-ZkY" firstAttribute="top" secondItem="3YW-ok-KbR" secondAttribute="bottom" constant="10" id="Wu7-Ob-pCM"/>
+                                                        <constraint firstItem="JSX-0D-IP5" firstAttribute="top" secondItem="U8O-7B-ZkY" secondAttribute="bottom" constant="23" id="ZVn-wC-q3P"/>
+                                                        <constraint firstItem="DFw-Se-B90" firstAttribute="top" secondItem="oyP-Eo-O3f" secondAttribute="bottom" constant="1" id="ZYO-il-PuK"/>
+                                                        <constraint firstItem="nuU-XL-cRp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nBb-uu-1OE" secondAttribute="trailing" constant="15" id="bV3-mQ-1Mb"/>
+                                                        <constraint firstAttribute="bottom" secondItem="DFw-Se-B90" secondAttribute="bottom" constant="5" id="cIw-HB-Scz"/>
+                                                        <constraint firstItem="3YW-ok-KbR" firstAttribute="top" secondItem="Wpt-ly-dD5" secondAttribute="bottom" id="chy-0v-xNE"/>
+                                                        <constraint firstAttribute="trailing" secondItem="oyP-Eo-O3f" secondAttribute="trailing" constant="19" id="cpj-ww-Z5S"/>
+                                                        <constraint firstItem="BeU-za-yB7" firstAttribute="centerY" secondItem="6zb-Xg-qJO" secondAttribute="centerY" id="e98-dK-COP"/>
+                                                        <constraint firstItem="nBb-uu-1OE" firstAttribute="leading" secondItem="3YW-ok-KbR" secondAttribute="trailing" constant="14" id="fAd-nP-tbU"/>
+                                                        <constraint firstAttribute="trailing" secondItem="nuU-XL-cRp" secondAttribute="trailing" constant="10" id="jvw-ta-krz"/>
+                                                        <constraint firstItem="3YW-ok-KbR" firstAttribute="top" secondItem="Wpt-ly-dD5" secondAttribute="bottom" id="kvs-p0-G3P"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Jop-NO-sjV" secondAttribute="trailing" constant="15" id="mcu-EB-yvO"/>
+                                                        <constraint firstItem="nBb-uu-1OE" firstAttribute="leading" secondItem="3YW-ok-KbR" secondAttribute="trailing" constant="14" id="nbW-Me-dFl"/>
+                                                        <constraint firstItem="pnW-pv-OmV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Jop-NO-sjV" secondAttribute="bottom" constant="15" id="oRy-5H-g2i"/>
+                                                        <constraint firstItem="BeU-za-yB7" firstAttribute="leading" secondItem="gUU-q7-y34" secondAttribute="leading" constant="15" id="p6r-f0-06u"/>
+                                                        <constraint firstItem="U8O-7B-ZkY" firstAttribute="leading" secondItem="Jop-NO-sjV" secondAttribute="leading" id="vue-Ra-0ob"/>
+                                                        <constraint firstAttribute="trailing" secondItem="JSX-0D-IP5" secondAttribute="trailing" constant="52" id="wuQ-6g-5C1"/>
+                                                        <constraint firstItem="nBb-uu-1OE" firstAttribute="top" secondItem="Wpt-ly-dD5" secondAttribute="bottom" constant="8" id="x6i-MD-80q"/>
+                                                        <constraint firstItem="Jop-NO-sjV" firstAttribute="leading" secondItem="gUU-q7-y34" secondAttribute="leading" constant="15" id="zc5-Ai-6vE"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ihU-Wh-8aT" firstAttribute="centerX" secondItem="jbn-cL-ZPb" secondAttribute="centerX" id="DS5-Qn-bxn"/>
+                                                <constraint firstItem="jbn-cL-ZPb" firstAttribute="leading" secondItem="nGv-Jd-Drw" secondAttribute="leading" constant="15" id="Ef2-Ia-3YZ"/>
+                                                <constraint firstItem="ihU-Wh-8aT" firstAttribute="top" secondItem="jbn-cL-ZPb" secondAttribute="bottom" id="JJe-Sw-Tc7"/>
+                                                <constraint firstItem="jbn-cL-ZPb" firstAttribute="top" relation="greaterThanOrEqual" secondItem="nGv-Jd-Drw" secondAttribute="top" constant="5" id="PQ3-2A-iSC"/>
+                                                <constraint firstAttribute="bottom" secondItem="gUU-q7-y34" secondAttribute="bottom" constant="15" id="PXa-vd-Q66"/>
+                                                <constraint firstItem="gUU-q7-y34" firstAttribute="top" secondItem="nGv-Jd-Drw" secondAttribute="top" constant="15" id="dDk-pR-kIk"/>
+                                                <constraint firstAttribute="bottom" secondItem="ihU-Wh-8aT" secondAttribute="bottom" id="pFK-Nm-Egk"/>
+                                                <constraint firstItem="gUU-q7-y34" firstAttribute="leading" secondItem="jbn-cL-ZPb" secondAttribute="trailing" constant="9" id="rDC-BX-nwZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="gUU-q7-y34" secondAttribute="trailing" constant="25" id="wgT-Vs-01d"/>
+                                                <constraint firstItem="jbn-cL-ZPb" firstAttribute="centerY" secondItem="Wpt-ly-dD5" secondAttribute="centerY" id="zQ1-L8-Kd0"/>
+                                            </constraints>
+                                        </view>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CellRiderInfo" selectionStyle="none" indentationWidth="10" reuseIdentifier="CellGoferRiderInfo" rowHeight="150" id="aQ0-zP-XiF" customClass="CellGoferRiderInfo" customModule="DriverWallet" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="394.5" width="384" height="150"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aQ0-zP-XiF" id="pSZ-zb-OY8">
+                                                    <rect key="frame" x="0.0" y="0.0" width="384" height="150"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ux1-6n-WjK">
+                                                            <rect key="frame" x="20" y="0.0" width="1" height="18"/>
+                                                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="1" id="JJz-cf-nUw"/>
+                                                                <constraint firstAttribute="height" constant="18" id="kxa-qc-BEt"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KeS-Ax-dCU">
+                                                            <rect key="frame" x="15.5" y="34" width="10" height="10"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="10" id="AKc-69-4gp"/>
+                                                                <constraint firstAttribute="height" constant="10" id="hnI-za-1cy"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fV9-Jz-3RV" customClass="SecondaryView" customModule="DriverWallet" customModuleProvider="target">
+                                                            <rect key="frame" x="34" y="14" width="325" height="122"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="DROP OFF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdP-Z8-vZw" customClass="SecondarySubHeaderLabel" customModule="DriverWallet" customModuleProvider="target">
+                                                                    <rect key="frame" x="15" y="15" width="295" height="20"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="20" id="kkj-A6-rgf"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="ClanPro-NarrNews" family="Clan Pro" pointSize="15"/>
+                                                                    <color key="textColor" red="0.81176470590000005" green="0.18039215689999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="localize" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="hgadshgohjkgthjghkhgkldhgkhdlgdhfgklhdkhgdlfghahsgdfsadghhdglsaghdhgsgh  " textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ite-CX-RNq" customClass="SecondaryRegularBoldLabel" customModule="DriverWallet" customModuleProvider="target">
+                                                                    <rect key="frame" x="15" y="43" width="295" height="64"/>
+                                                                    <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="18"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstItem="ite-CX-RNq" firstAttribute="leading" secondItem="TdP-Z8-vZw" secondAttribute="leading" id="2S5-2s-uPa"/>
+                                                                <constraint firstItem="ite-CX-RNq" firstAttribute="trailing" secondItem="TdP-Z8-vZw" secondAttribute="trailing" id="6ra-xr-GDK"/>
+                                                                <constraint firstItem="ite-CX-RNq" firstAttribute="top" secondItem="TdP-Z8-vZw" secondAttribute="bottom" constant="8" id="9vT-5T-gSB"/>
+                                                                <constraint firstItem="TdP-Z8-vZw" firstAttribute="leading" secondItem="fV9-Jz-3RV" secondAttribute="leading" constant="15" id="aLy-Vd-tBM"/>
+                                                                <constraint firstAttribute="trailing" secondItem="TdP-Z8-vZw" secondAttribute="trailing" constant="15" id="ewW-OU-Eg7"/>
+                                                                <constraint firstItem="TdP-Z8-vZw" firstAttribute="top" secondItem="fV9-Jz-3RV" secondAttribute="top" constant="15" id="kqj-4K-zge"/>
+                                                                <constraint firstAttribute="bottom" secondItem="ite-CX-RNq" secondAttribute="bottom" constant="15" id="qcr-11-g5e"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="fV9-Jz-3RV" secondAttribute="bottom" constant="3" id="9xE-yw-sBR"/>
+                                                        <constraint firstItem="ux1-6n-WjK" firstAttribute="leading" secondItem="pSZ-zb-OY8" secondAttribute="leading" constant="20" id="Cah-ME-RRO"/>
+                                                        <constraint firstItem="ux1-6n-WjK" firstAttribute="top" secondItem="pSZ-zb-OY8" secondAttribute="top" id="Chv-0B-oXX"/>
+                                                        <constraint firstItem="KeS-Ax-dCU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ux1-6n-WjK" secondAttribute="bottom" id="Hhv-6l-G6C"/>
+                                                        <constraint firstItem="KeS-Ax-dCU" firstAttribute="centerY" secondItem="TdP-Z8-vZw" secondAttribute="centerY" id="LG4-DV-0jH"/>
+                                                        <constraint firstItem="KeS-Ax-dCU" firstAttribute="centerX" secondItem="ux1-6n-WjK" secondAttribute="centerX" id="VXz-ui-xpd"/>
+                                                        <constraint firstItem="fV9-Jz-3RV" firstAttribute="top" secondItem="pSZ-zb-OY8" secondAttribute="topMargin" constant="3" id="Wrd-Q2-oVU"/>
+                                                        <constraint firstAttribute="trailing" secondItem="fV9-Jz-3RV" secondAttribute="trailing" constant="25" id="vpD-nX-pM0"/>
+                                                        <constraint firstItem="fV9-Jz-3RV" firstAttribute="leading" secondItem="KeS-Ax-dCU" secondAttribute="trailing" constant="8.5" id="ygv-4i-hru"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <outlet property="dropTitleLbl" destination="TdP-Z8-vZw" id="RRJ-ow-7hS"/>
+                                                    <outlet property="dropView" destination="fV9-Jz-3RV" id="tK4-zY-Iee"/>
+                                                    <outlet property="lblRiderName" destination="ite-CX-RNq" id="xLt-j4-6vg"/>
+                                                    <outlet property="viewDot" destination="KeS-Ax-dCU" id="J0l-fZ-LaQ"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="aeT-Dr-91U" id="LIE-9X-bPI"/>
+                                            <outlet property="delegate" destination="aeT-Dr-91U" id="QZL-ke-ZDo"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Dao-yI-SZK" firstAttribute="leading" secondItem="TCa-wV-j4g" secondAttribute="leading" constant="15" id="cB9-hB-MSx"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dao-yI-SZK" secondAttribute="trailing" constant="15" id="jNn-Fe-myS"/>
+                                    <constraint firstItem="Dao-yI-SZK" firstAttribute="top" secondItem="TCa-wV-j4g" secondAttribute="top" constant="15" id="l0Q-ia-wwT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8hl-Un-K21"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TCa-wV-j4g" firstAttribute="top" secondItem="z6h-HD-TcF" secondAttribute="bottom" constant="15" id="M1Q-ok-7O6"/>
+                            <constraint firstItem="z6h-HD-TcF" firstAttribute="trailing" secondItem="8hl-Un-K21" secondAttribute="trailing" id="WjW-VX-XY8"/>
+                            <constraint firstItem="TCa-wV-j4g" firstAttribute="bottom" secondItem="aeT-Dr-91U" secondAttribute="bottom" id="aY5-9a-W9y"/>
+                            <constraint firstItem="TCa-wV-j4g" firstAttribute="trailing" secondItem="8hl-Un-K21" secondAttribute="trailing" id="k3F-j5-Rub"/>
+                            <constraint firstItem="Dao-yI-SZK" firstAttribute="bottom" secondItem="8hl-Un-K21" secondAttribute="bottom" constant="-15" id="ngs-BM-4lp"/>
+                            <constraint firstItem="z6h-HD-TcF" firstAttribute="top" secondItem="g4S-x4-tXA" secondAttribute="bottom" id="nt1-0p-PXg"/>
+                            <constraint firstItem="z6h-HD-TcF" firstAttribute="leading" secondItem="8hl-Un-K21" secondAttribute="leading" id="q3p-zS-WNi"/>
+                            <constraint firstItem="TCa-wV-j4g" firstAttribute="leading" secondItem="8hl-Un-K21" secondAttribute="leading" id="zhZ-Pj-hKV"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="backBtn" destination="AZh-Fu-MNK" id="Ukr-iy-d7U"/>
+                            <outlet property="barOneView" destination="U8O-7B-ZkY" id="GfO-aB-0c4"/>
+                            <outlet property="barTwoView" destination="Jop-NO-sjV" id="Lm0-IP-qKk"/>
+                            <outlet property="btnCall" destination="06g-KY-Uzr" id="INN-cZ-4sB"/>
+                            <outlet property="btnCancel" destination="mS2-BR-cmz" id="0yI-Jy-EST"/>
+                            <outlet property="btnMessage" destination="K4M-Xo-Iuw" id="SPc-yp-vIJ"/>
+                            <outlet property="car_image" destination="BeU-za-yB7" id="V1U-KM-6BZ"/>
+                            <outlet property="contentView" destination="TCa-wV-j4g" id="IfB-Nx-dbc"/>
+                            <outlet property="imgRiderThumb" destination="nuU-XL-cRp" id="7Fa-CT-58S"/>
+                            <outlet property="lblRiderAddress" destination="oyP-Eo-O3f" id="79E-qF-RcQ"/>
+                            <outlet property="lblRiderRating" destination="nBb-uu-1OE" id="XnF-Il-qfz"/>
+                            <outlet property="lblUserName" destination="3YW-ok-KbR" id="89J-Eh-xMV"/>
+                            <outlet property="lblVehicleName" destination="6zb-Xg-qJO" id="XQB-Qq-KLb"/>
+                            <outlet property="locationIconLbl" destination="pnW-pv-OmV" id="z66-iK-RCP"/>
+                            <outlet property="pageTitlelbl" destination="QOM-6x-2Ca" id="1Lt-LR-ARv"/>
+                            <outlet property="pickupLbl" destination="Wpt-ly-dD5" id="iO6-0G-Hp7"/>
+                            <outlet property="pickupView" destination="gUU-q7-y34" id="EZd-LX-Smh"/>
+                            <outlet property="tblRiderProfile" destination="Dao-yI-SZK" id="Ht3-d2-YMs"/>
+                            <outlet property="viewDot" destination="jbn-cL-ZPb" id="DLA-Pv-d8Z"/>
+                            <outlet property="viewDotLine" destination="ihU-Wh-8aT" id="dLJ-61-3yt"/>
+                            <outlet property="viewTopHeader" destination="z6h-HD-TcF" id="8rJ-Oz-sPK"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="4mF-8q-35H"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="goferRiderProfileView" destination="aeT-Dr-91U" id="bbB-7r-iY2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="er3-Nx-eKX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7096" y="-75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Currency_1" width="200" height="200"/>
+        <image name="bar" width="48" height="48"/>
+        <image name="car01.png" width="80" height="80"/>
+        <image name="compass.png" width="32" height="32"/>
+        <image name="imageView:ydB-CG-qYX:image" width="21" height="38">
+            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05T
+S2V5ZWRBcmNoaXZlctEICVRyb290gAGuCwwZGh8UJCkqMTQ3PUBVJG51bGzWDQ4PEBESExQVFhcYVk5T
+U2l6ZV5OU1Jlc2l6aW5nTW9kZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVwc1dOU0NvbG9ygAIQAIAN
+EiDAAACAA4ALWHsyMSwgMzh90hsPHB5aTlMub2JqZWN0c6EdgASACtIbDyAjoiEigAWABoAJ0w8lJico
+FF8QFE5TVElGRlJlcHJlc2VudGF0aW9uXxAZTlNJbnRlcm5hbExheW91dERpcmVjdGlvboAIgAdPERUu
+TU0AKgAADIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALAQES
+MQkJUFkSEY5yGBe1fRoZw3QZF7dcEhKSNAkJVg0CAhYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAABgEACkQMDG6PIyDawj87/9tWUP/oY13/7Gdh/+hjXf/cV1L/xUI9/5IjIt9LDg55
+CAIBDwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAATAwMhdxoYusVBPf/sZV//+m9p//tqY//6Zl//
++mNd//plXv/7aWP/+25o/+9nYf/KRD//fx0bxRkFBCsAAAAAAAAAAAAAAAAAAAAAAAAAABMDAyCJIB7S
+21JN//lqZP/6YFr/91pV//daVP/3WlT/91pU//daVP/3WlT/91pU//hfWf/6amT/31ZR/5AkH9wZBQQr
+AAAAAAAAAAAAAAAABQEACXUaGLnbT0r/+GNd//ZZVP/2WVT/9lpU//ZaVP/2WlT/9lpU//ZaVP/2WlT/
+9lpU//ZZVP/2WVP/+mJc/+BTTf+AHRzIBwEBDgAAAAAAAAAAPwwMZ8M7N//3XVf/9lhS//ZYU//2WVP/
+9llT//ZZU//2WVP/91lT//ZZU//2WVP/9llT//ZZU//2WVP/9lhS//pdV//KPjn/Sw8OegAAAAAGAQEK
+iB8d0ehPSv/4WFP/9ldS//ZXUv/2V1L/9ldS//pZVP/1VlH/8FRO//VWUf/6WVT/9ldS//ZXUv/2V1L/
+9ldS//dYUv/uU07/kyQi4AwCAhUnBwdBuTEt/PdWUf/3VlH/9lZQ//ZWUP/2VlH/+FdS/8lAOf+MIxv/
+ehkT/40jG//KQDn/+FdS//ZWUf/2VlD/9lZQ//ZWUf/4V1L/wzUy/zULClhWEhKN0Dw4//hXUf/1VE//
+9lRP//ZUT//6V1H/xTw2/20TDf9pEgz/axMN/2kSDP9tEw3/xT02//pXUf/2VE//9lRP//ZUT//4V1H/
+1UA8/2sXFqx7GhnE10E+//dVT//1U03/9VNN//ZUTv/uUEr/hB4X/2kSC/9tEw3/bRMN/20TDf9pEgv/
+hB4X/+5QS//2VE7/9VNN//VTTf/3VE//3UVB/48gHeOEHRrQ2kI+//dTTf/0UUz/9FFM//dSTf/mSkT/
+cRUP/2wTDf9tEw3/bRMN/20TDf9sEw3/chYQ/+ZKRf/2Uk3/9FFM//RRTP/3Uk3/4EVB/5UhHu1wGRey
+1T06//dSTf/0T0v/9E9L//dQS//pSkb/ehgS/2sTDf9tEw3/bRMN/20TDf9rEw3/ehkT/+tLRv/2UEv/
+9E9L//RPS//3UUz/2kE9/4McG9E+DAxmyDUy//dQS//zTkn/805J//ROSf/3UEv/pCsk/2cSCv9sEw3/
+bRMN/2wTDf9nEgr/pSsl//dQS//0Tkn/805J//NOSf/3UEv/zDg1/08REIESAwMfoCQj6+5JRf/0TUj/
+80xH//NMR//0TUj/7ElE/5klH/9vFA7/aBEL/28UDv+ZJR//7ElE//RNSP/zTEf/80xH//RNSP/xS0f/
+qCkn8xkFBCoAAAAAYhYTnNc7N//3S0j/80lH//NJR//zSUf/9EpH//NJR//UPDj/wzUx/9Q9OP/zSUf/
+9EpH//NJR//zSUf/80lH//ZMR//dPjv/bhgXrQAAAAIAAAAAGwUFLaQmJfDtRkL/9ElG//NJRf/zSUX/
+80lF//NJRf/3Skf/+UtH//dKR//zSUX/80lF//NJRf/zSUX/9ElF/+9HQ/+uKif3JAcHOwAAAAAAAAAA
+AAAAAFESEITLNDH/9EdE//JHQ//yR0P/8kdD//JHQ//yR0P/8kdD//JHQ//yR0P/8kdD//JHQ//yR0P/
+9kdF/9I3NP9dFBOXAAAAAAAAAAAAAAAAAAAAAAoCAhKJHh3V4z07//RFQ//yREL/8kRC//JEQv/yREL/
+8kRC//JEQv/yREL/8kRC//JEQv/0RUP/5j89/5QgH+IRAwMcAAAAAAAAAAAAAAAAAAAAAAAAAAAyCwpS
+tiwp/fFDP//yQ0D/8kNA//JDQP/yQ0D/8kNA//JDQP/yQ0D/8kNA//JDQP/zQ0D/vy8s/z0NDWUAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACaxcWq9Y2NP/0QkD/8kE///JBP//yQT//8kE///JBP//yQT//
+8kE///RCQP/bODb/eBsYvAMAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGgUFKqMmI+/sPjv/
+8j8+//E/Pv/xPz7/8T8+//E/Pv/xPz7/8j8+/+0/PP+qJyX2IgcGNwAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAFESEIbOMi//8z89//E+PP/xPjz/8T48//E+PP/xPjz/8z89/9MzMv9cFBOV
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4DAxiVISDk5zk4//I8O//xPDv/
+8Tw7//E8O//yPDv/6jo4/54kIuwUBAMhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAABLEQ97yi8u//I6Of/xOjn/8To5//E6Of/zOzr/0DEu/1cUEo4AAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAwMYlyIg5ug3Nv/xOTj/7zo4/+86OP/sODf/
+oiMi7xUFBCQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+WxQTk9UwL//zODj/7zc3//I4OP/bMjH/aBcVpQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIwcHO7MoJfvvNTX/7zU2//E1Nv+5KCf+KwoJSQAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAABoEdGsjkMjL/
+8zU1/+cyM/+MHx3WCAIBDQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAE8REH/RLi3/8zM0/9UuLv9ZFBKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACEHBje0KCX78DEz/7opKP8qCAhF
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAcCAQyMHh3T4i4v/5chIOALAgMUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABlFxWf0Swr/3IZGLEAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABADg1k
+vCkn/00RD3kAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAiBwY1qCQj/SsKCEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUBAMeiR8d2BsFBSoAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAJAQEObRgXrBEEAxoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABFAQEIQIAAAQAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAEAAAMAAAABABUAAAEBAAMAAAABACYAAAECAAMAAAAEAAANRgED
+AAMAAAABAAEAAAEGAAMAAAABAAIAAAEKAAMAAAABAAEAAAERAAQAAAABAAAACAESAAMAAAABAAEAAAEV
+AAMAAAABAAQAAAEWAAMAAAABACYAAAEXAAQAAAABAAAMeAEcAAMAAAABAAEAAAEoAAMAAAABAAIAAAFS
+AAMAAAABAAEAAAFTAAMAAAAEAAANTodzAAcAAAfYAAANVgAAAAAACAAIAAgACAABAAEAAQABAAAH2GFw
+cGwCIAAAbW50clJHQiBYWVogB9kAAgAZAAsAGgALYWNzcEFQUEwAAAAAYXBwbAAAAAAAAAAAAAAAAAAA
+AAAAAPbWAAEAAAAA0y1hcHBsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAALZGVzYwAAAQgAAABvZHNjbQAAAXgAAAWcY3BydAAABxQAAAA4d3RwdAAAB0wAAAAUclhZWgAA
+B2AAAAAUZ1hZWgAAB3QAAAAUYlhZWgAAB4gAAAAUclRSQwAAB5wAAAAOY2hhZAAAB6wAAAAsYlRSQwAA
+B5wAAAAOZ1RSQwAAB5wAAAAOZGVzYwAAAAAAAAAUR2VuZXJpYyBSR0IgUHJvZmlsZQAAAAAAAAAAAAAA
+FEdlbmVyaWMgUkdCIFByb2ZpbGUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAG1sdWMAAAAAAAAAHwAAAAxza1NLAAAAKAAAAYRkYURLAAAALgAAAaxjYUVTAAAAJAAA
+Adp2aVZOAAAAJAAAAf5wdEJSAAAAJgAAAiJ1a1VBAAAAKgAAAkhmckZVAAAAKAAAAnJodUhVAAAAKAAA
+App6aFRXAAAAFgAAAsJuYk5PAAAAJgAAAthjc0NaAAAAIgAAAv5oZUlMAAAAHgAAAyBpdElUAAAAKAAA
+Az5yb1JPAAAAJAAAA2ZkZURFAAAALAAAA4prb0tSAAAAFgAAA7ZzdlNFAAAAJgAAAth6aENOAAAAFgAA
+A8xqYUpQAAAAGgAAA+JlbEdSAAAAIgAAA/xwdFBPAAAAJgAABB5ubE5MAAAAKAAABERlc0VTAAAAJgAA
+BB50aFRIAAAAJAAABGx0clRSAAAAIgAABJBmaUZJAAAAKAAABLJockhSAAAAKAAABNpwbFBMAAAALAAA
+BQJydVJVAAAAIgAABS5hckVHAAAAJgAABVBlblVTAAAAJgAABXYAVgFhAGUAbwBiAGUAYwBuAP0AIABS
+AEcAQgAgAHAAcgBvAGYAaQBsAEcAZQBuAGUAcgBlAGwAIABSAEcAQgAtAGIAZQBzAGsAcgBpAHYAZQBs
+AHMAZQBQAGUAcgBmAGkAbAAgAFIARwBCACAAZwBlAG4A6AByAGkAYwBDHqUAdQAgAGgA7ABuAGgAIABS
+AEcAQgAgAEMAaAB1AG4AZwBQAGUAcgBmAGkAbAAgAFIARwBCACAARwBlAG4A6QByAGkAYwBvBBcEMAQz
+BDAEOwRMBD0EOAQ5ACAEPwRABD4ERAQwBDkEOwAgAFIARwBCAFAAcgBvAGYAaQBsACAAZwDpAG4A6QBy
+AGkAcQB1AGUAIABSAFYAQgDBAGwAdABhAGwA4QBuAG8AcwAgAFIARwBCACAAcAByAG8AZgBpAGyQGnUo
+ACAAUgBHAEIAIIJyX2ljz4/wAEcAZQBuAGUAcgBpAHMAawAgAFIARwBCAC0AcAByAG8AZgBpAGwATwBi
+AGUAYwBuAP0AIABSAEcAQgAgAHAAcgBvAGYAaQBsBeQF6AXVBeQF2QXcACAAUgBHAEIAIAXbBdwF3AXZ
+AFAAcgBvAGYAaQBsAG8AIABSAEcAQgAgAGcAZQBuAGUAcgBpAGMAbwBQAHIAbwBmAGkAbAAgAFIARwBC
+ACAAZwBlAG4AZQByAGkAYwBBAGwAbABnAGUAbQBlAGkAbgBlAHMAIABSAEcAQgAtAFAAcgBvAGYAaQBs
+x3y8GAAgAFIARwBCACDVBLhc0wzHfGZukBoAIABSAEcAQgAgY8+P8GWHTvZOAIIsACAAUgBHAEIAIDDX
+MO0w1TChMKQw6wOTA7UDvQO5A7oDzAAgA8ADwQO/A8YDrwO7ACAAUgBHAEIAUABlAHIAZgBpAGwAIABS
+AEcAQgAgAGcAZQBuAOkAcgBpAGMAbwBBAGwAZwBlAG0AZQBlAG4AIABSAEcAQgAtAHAAcgBvAGYAaQBl
+AGwOQg4bDiMORA4fDiUOTAAgAFIARwBCACAOFw4xDkgOJw5EDhsARwBlAG4AZQBsACAAUgBHAEIAIABQ
+AHIAbwBmAGkAbABpAFkAbABlAGkAbgBlAG4AIABSAEcAQgAtAHAAcgBvAGYAaQBpAGwAaQBHAGUAbgBl
+AHIAaQENAGsAaQAgAFIARwBCACAAcAByAG8AZgBpAGwAVQBuAGkAdwBlAHIAcwBhAGwAbgB5ACAAcABy
+AG8AZgBpAGwAIABSAEcAQgQeBDEESQQ4BDkAIAQ/BEAEPgREBDgEOwRMACAAUgBHAEIGRQZEBkEAIAYq
+BjkGMQZKBkEAIABSAEcAQgAgBicGRAY5BicGRQBHAGUAbgBlAHIAaQBjACAAUgBHAEIAIABQAHIAbwBm
+AGkAbABldGV4dAAAAABDb3B5cmlnaHQgMjAwNyBBcHBsZSBJbmMuLCBhbGwgcmlnaHRzIHJlc2VydmVk
+LgBYWVogAAAAAAAA81IAAQAAAAEWz1hZWiAAAAAAAAB0TQAAPe4AAAPQWFlaIAAAAAAAAFp1AACscwAA
+FzRYWVogAAAAAAAAKBoAABWfAAC4NmN1cnYAAAAAAAAAAQHNAABzZjMyAAAAAAABDEIAAAXe///zJgAA
+B5IAAP2R///7ov///aMAAAPcAADAbNIrLC0uWiRjbGFzc25hbWVYJGNsYXNzZXNfEBBOU0JpdG1hcElt
+YWdlUmVwoy0vMFpOU0ltYWdlUmVwWE5TT2JqZWN00issMjNXTlNBcnJheaIyMNIrLDU2Xk5TTXV0YWJs
+ZUFycmF5ozUyMNM4OQ86OzxXTlNXaGl0ZVxOU0NvbG9yU3BhY2VEMCAwABADgAzSKyw+P1dOU0NvbG9y
+oj4w0issQUJXTlNJbWFnZaJBMAAIABEAGgAkACkAMgA3AEkATABRAFMAYgBoAHUAfACLAJIAnwCmAK4A
+sACyALQAuQC7AL0AxgDLANYA2ADaANwA4QDkAOYA6ADqAPEBCAEkASYBKBZaFl8WahZzFoYWihaVFp4W
+oxarFq4WsxbCFsYWzRbVFuIW5xbpFusW8Bb4FvsXABcIAAAAAAAAAgEAAAAAAAAAQwAAAAAAAAAAAAAA
+AAAAFws
+</mutableData>
+        </image>
+        <namedColor name="ThemeYellow">
+            <color red="0.16862745098039217" green="0.79607843137254897" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

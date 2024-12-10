@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PendingTripTVC" rowHeight="442" id="KGk-i7-Jjw" customClass="PendingTripTVC" customModule="DriverWallet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="473" height="342"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="473" height="342"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="24k-q2-LA9">
+                        <rect key="frame" x="15" y="15" width="443" height="312"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ncg-vJ-cEM">
+                                <rect key="frame" x="0.0" y="0.0" width="443" height="166"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Vd8-4a-xbG">
+                                        <rect key="frame" x="0.0" y="0.0" width="443" height="20"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="No# 71564582" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wse-1b-ift" customClass="SecondarySmallHeaderLabel" customModule="DriverWallet" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="155" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="NW3-wG-H4h"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Fri, Nov 15 2020 12:02 pm" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWb-ei-rYK" customClass="InactiveSmallLabel" customModule="DriverWallet" customModuleProvider="target">
+                                                <rect key="frame" x="165" y="0.0" width="278" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="2cc-9i-9eD"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" name="ThemeInactive"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="zxL-aU-qEI">
+                                        <rect key="frame" x="0.0" y="30" width="443" height="20"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWC-JT-grv" customClass="SecondarySmallLabel" customModule="DriverWallet" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="443" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="caS-01-hGG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mXj-F9-Xlp">
+                                        <rect key="frame" x="0.0" y="60" width="443" height="15"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Your Job" translatesAutoresizingMaskIntoConstraints="NO" id="nFL-lW-myO">
+                                                <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                                                <color key="tintColor" name="ThemeMain"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="nFL-lW-myO" secondAttribute="height" multiplier="1:1" id="rho-nA-iWJ"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFO-uP-fYy" customClass="SecondarySmallLabel" customModule="DriverWallet" customModuleProvider="target">
+                                                <rect key="frame" x="25" y="0.0" width="418" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="ywu-Mb-4p5"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="751" text="12/9, Ranan Nagar, Madurai, TamilNadu - 625020, India, 12/9, Ranan Nagar, Madurai, TamilNadu - 625020, India" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laC-Ec-MpH" customClass="SecondarySmallMediumLabel" customModule="DriverWallet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="85" width="443" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="XTd-D1-BRz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="XTd-D1-BRz"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jjq-7h-lAT">
+                                        <rect key="frame" x="0.0" y="131" width="443" height="15"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green_loc" translatesAutoresizingMaskIntoConstraints="NO" id="4Xa-Gs-Xnl">
+                                                <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="4Xa-Gs-Xnl" secondAttribute="height" multiplier="1:1" id="SPc-lQ-JbQ"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhm-mB-XN3" customClass="SecondarySmallLabel" customModule="DriverWallet" customModuleProvider="target">
+                                                <rect key="frame" x="25" y="0.0" width="418" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="NUy-GS-5do"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12/9, Ranan Nagar, Madurai, TamilNadu - 625020, India" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yz8-H6-1VA" customClass="SecondarySmallMediumLabel" customModule="DriverWallet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="156" width="443" height="10"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Eti-kW-ZVX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Eti-kW-ZVX"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pU7-61-eHJ">
+                                <rect key="frame" x="0.0" y="181" width="443" height="45"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hXY-eW-xxg">
+                                        <rect key="frame" x="0.0" y="0.0" width="443" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NsB-pQ-i7L" customClass="PrimaryButton" customModule="DriverWallet" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="216.5" height="45"/>
+                                                <color key="backgroundColor" name="ThemeMain"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                                <state key="normal" title="Accepted Jobs">
+                                                    <color key="titleColor" name="ThemBgrnd"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGN-IE-Ba8" customClass="PrimaryButton" customModule="DriverWallet" customModuleProvider="target">
+                                                <rect key="frame" x="226.5" y="0.0" width="216.5" height="45"/>
+                                                <color key="backgroundColor" name="ThemeMain"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                                <state key="normal" title="Declined Services">
+                                                    <color key="titleColor" name="ThemBgrnd"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="3Kr-Nd-cUA"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0An-3o-ABi">
+                                <rect key="frame" x="0.0" y="241" width="443" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UmK-69-EF0" customClass="InactiveButton" customModule="DriverWallet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="443" height="45"/>
+                                        <color key="backgroundColor" name="ThemeMain"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="unO-SL-B45"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                        <state key="normal" title="Requested service">
+                                            <color key="titleColor" name="ThemBgrnd"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qFZ-4O-7zT">
+                                <rect key="frame" x="0.0" y="301" width="443" height="11"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NjJ-XT-rW6">
+                                        <rect key="frame" x="0.0" y="0.0" width="443" height="11"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqP-za-BdO">
+                                                <rect key="frame" x="45" y="10" width="353" height="1"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="0AB-hN-hMq"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="gqP-za-BdO" firstAttribute="top" secondItem="NjJ-XT-rW6" secondAttribute="top" constant="10" id="5vE-Ba-1d4"/>
+                                            <constraint firstAttribute="height" constant="11" id="7FG-IO-lsg"/>
+                                            <constraint firstAttribute="bottom" secondItem="gqP-za-BdO" secondAttribute="bottom" id="aLX-S3-L73"/>
+                                            <constraint firstItem="gqP-za-BdO" firstAttribute="leading" secondItem="NjJ-XT-rW6" secondAttribute="leading" constant="45" id="eFf-ip-3kn"/>
+                                            <constraint firstAttribute="trailing" secondItem="gqP-za-BdO" secondAttribute="trailing" constant="45" id="wkM-np-6ys"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="24k-q2-LA9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="U9S-oi-Udq"/>
+                    <constraint firstAttribute="trailing" secondItem="24k-q2-LA9" secondAttribute="trailing" constant="15" id="biN-vo-yRt"/>
+                    <constraint firstItem="24k-q2-LA9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="dmZ-is-6cW"/>
+                    <constraint firstAttribute="bottom" secondItem="24k-q2-LA9" secondAttribute="bottom" constant="15" id="lGK-MX-af2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="acceptedJobBtn" destination="NsB-pQ-i7L" id="6Jc-Xe-tzR"/>
+                <outlet property="barLbl" destination="gqP-za-BdO" id="kNv-nl-gxu"/>
+                <outlet property="barStack" destination="qFZ-4O-7zT" id="eGp-et-FJV"/>
+                <outlet property="barStackHeight" destination="0AB-hN-hMq" id="1Xw-Pg-0M8"/>
+                <outlet property="buttonStackHeight" destination="3Kr-Nd-cUA" id="pm4-WM-C7W"/>
+                <outlet property="buttonStackMain" destination="pU7-61-eHJ" id="w1N-Do-szB"/>
+                <outlet property="buttonsStack" destination="hXY-eW-xxg" id="cKm-xD-tzA"/>
+                <outlet property="declinedServicesBtn" destination="PGN-IE-Ba8" id="6di-UU-XkI"/>
+                <outlet property="dropImg" destination="4Xa-Gs-Xnl" id="ugI-YT-EXy"/>
+                <outlet property="dropLocation" destination="yz8-H6-1VA" id="m9C-Pe-kH1"/>
+                <outlet property="dropLocationText" destination="Uhm-mB-XN3" id="jb3-q0-itJ"/>
+                <outlet property="dropStack" destination="Jjq-7h-lAT" id="qof-p8-Ehf"/>
+                <outlet property="jobDateTime" destination="WWb-ei-rYK" id="g4s-gB-7hi"/>
+                <outlet property="jobId" destination="wse-1b-ift" id="ciJ-i4-EMH"/>
+                <outlet property="jobLocation" destination="laC-Ec-MpH" id="8dU-AY-DdI"/>
+                <outlet property="jobLocationText" destination="pFO-uP-fYy" id="e26-0g-v5d"/>
+                <outlet property="pickupImg" destination="nFL-lW-myO" id="AS8-HH-gK7"/>
+                <outlet property="requestServiceStack" destination="0An-3o-ABi" id="qPE-gx-szU"/>
+                <outlet property="requestedServiceButton" destination="UmK-69-EF0" id="4uE-Yh-BQ3"/>
+                <outlet property="statusStack" destination="zxL-aU-qEI" id="wY6-tT-kGb"/>
+                <outlet property="statusStackHeight" destination="caS-01-hGG" id="x4t-Q2-MzN"/>
+                <outlet property="statusTitleLbl" destination="WWC-JT-grv" id="zqz-01-s1x"/>
+            </connections>
+            <point key="canvasLocation" x="178.98550724637681" y="250.44642857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Your Job" width="60" height="86"/>
+        <image name="green_loc" width="60" height="86"/>
+        <namedColor name="ThemBgrnd">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ThemeInactive">
+            <color red="0.64300000667572021" green="0.64300000667572021" blue="0.67100000381469727" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ThemeMain">
+            <color red="0.91764705882352937" green="0.2196078431372549" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

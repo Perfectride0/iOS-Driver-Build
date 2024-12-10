@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>239640610908-r2elld96jeo830qpjr9i2cdtunqf9br6.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.239640610908-r2elld96jeo830qpjr9i2cdtunqf9br6</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>239640610908-0if0477tmnk9mc900s4nesltr2obku3o.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB-iLPUrAxRmDvcLPpLlK6WcIXdQc3lEyA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>239640610908</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.trioangle.goferdriver</string>
+	<key>PROJECT_ID</key>
+	<string>gofer-c7ed5</string>
+	<key>STORAGE_BUCKET</key>
+	<string>gofer-c7ed5.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:239640610908:ios:aa571bb2f92b0c48</string>
+	<key>DATABASE_URL</key>
+	<string>https://gofer-c7ed5.firebaseio.com</string>
+</dict>
+</plist>

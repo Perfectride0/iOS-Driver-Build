@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="106" id="KGk-i7-Jjw" customClass="PaymentTVC" customModule="DriverWallet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="348" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="348" height="106"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UnC-9z-RHM">
+                        <rect key="frame" x="15" y="0.0" width="318" height="106"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9aq-Ry-jVw">
+                                <rect key="frame" x="0.0" y="8" width="318" height="90"/>
+                                <color key="backgroundColor" name="ThemBgrnd"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Hair Wash kdjflksdfjds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2G-5h-yLA" customClass="SecondarySubHeaderLabel" customModule="DriverWallet" customModuleProvider="target">
+                                <rect key="frame" x="15" y="12" width="217" height="83"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hT-NR-cns" customClass="SecondarySubHeaderLabel" customModule="DriverWallet" customModuleProvider="target">
+                                <rect key="frame" x="233" y="12" width="28" height="83"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="15.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vrz-Ru-6Um" customClass="SecondarySubHeaderLabel" customModule="DriverWallet" customModuleProvider="target">
+                                <rect key="frame" x="261" y="12" width="42" height="83"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dropdown_btn_red" translatesAutoresizingMaskIntoConstraints="NO" id="f2p-Jk-Mf5" customClass="CommonColorImageView" customModule="DriverWallet" customModuleProvider="target">
+                                <rect key="frame" x="242" y="44.5" width="17" height="17"/>
+                                <color key="tintColor" name="ThemeMain"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="f2p-Jk-Mf5" secondAttribute="height" multiplier="1:1" id="C47-cY-F5D"/>
+                                    <constraint firstAttribute="height" constant="17" id="XH6-mS-faZ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="Backgrnd"/>
+                        <constraints>
+                            <constraint firstItem="Vrz-Ru-6Um" firstAttribute="leading" secondItem="f2p-Jk-Mf5" secondAttribute="trailing" constant="2" id="2jc-fm-nuZ"/>
+                            <constraint firstAttribute="bottom" secondItem="V2G-5h-yLA" secondAttribute="bottom" constant="11" id="3aE-CC-3fE"/>
+                            <constraint firstItem="Vrz-Ru-6Um" firstAttribute="leading" secondItem="7hT-NR-cns" secondAttribute="trailing" id="AgN-Vr-BxK"/>
+                            <constraint firstItem="V2G-5h-yLA" firstAttribute="top" secondItem="UnC-9z-RHM" secondAttribute="top" constant="12" id="Ltd-YD-VYA"/>
+                            <constraint firstItem="9aq-Ry-jVw" firstAttribute="leading" secondItem="UnC-9z-RHM" secondAttribute="leading" id="M5I-R0-v2L"/>
+                            <constraint firstAttribute="trailing" secondItem="9aq-Ry-jVw" secondAttribute="trailing" id="OM0-Cy-9vE"/>
+                            <constraint firstItem="9aq-Ry-jVw" firstAttribute="top" secondItem="UnC-9z-RHM" secondAttribute="top" constant="8" id="edq-jG-7iw"/>
+                            <constraint firstItem="7hT-NR-cns" firstAttribute="top" secondItem="UnC-9z-RHM" secondAttribute="top" constant="12" id="fc5-pY-wNe"/>
+                            <constraint firstAttribute="bottom" secondItem="9aq-Ry-jVw" secondAttribute="bottom" constant="8" id="hDF-Ob-ugc"/>
+                            <constraint firstItem="Vrz-Ru-6Um" firstAttribute="top" secondItem="UnC-9z-RHM" secondAttribute="top" constant="12" id="lCi-Lk-zOn"/>
+                            <constraint firstItem="V2G-5h-yLA" firstAttribute="leading" secondItem="9aq-Ry-jVw" secondAttribute="leading" constant="15" id="lPN-FI-z6v"/>
+                            <constraint firstItem="f2p-Jk-Mf5" firstAttribute="leading" secondItem="V2G-5h-yLA" secondAttribute="trailing" constant="10" id="o0I-ks-kJp"/>
+                            <constraint firstItem="f2p-Jk-Mf5" firstAttribute="centerY" secondItem="UnC-9z-RHM" secondAttribute="centerY" id="tXE-vO-ZSY"/>
+                            <constraint firstItem="9aq-Ry-jVw" firstAttribute="trailing" secondItem="Vrz-Ru-6Um" secondAttribute="trailing" constant="15" id="tyU-4A-vbr"/>
+                            <constraint firstAttribute="bottom" secondItem="Vrz-Ru-6Um" secondAttribute="bottom" constant="11" id="u1m-sk-ezT"/>
+                            <constraint firstAttribute="bottom" secondItem="7hT-NR-cns" secondAttribute="bottom" constant="11" id="w1f-vR-WDB"/>
+                            <constraint firstItem="7hT-NR-cns" firstAttribute="leading" relation="lessThanOrEqual" secondItem="V2G-5h-yLA" secondAttribute="trailing" constant="1" id="xoo-Fo-20a"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="UnC-9z-RHM" secondAttribute="bottom" id="ETz-f5-HxI"/>
+                    <constraint firstItem="UnC-9z-RHM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="K4D-hC-8fW"/>
+                    <constraint firstAttribute="trailing" secondItem="UnC-9z-RHM" secondAttribute="trailing" constant="15" id="chy-TU-dip"/>
+                    <constraint firstItem="UnC-9z-RHM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="sdn-Ys-wi1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="borderView" destination="9aq-Ry-jVw" id="ELy-IA-Szi"/>
+                <outlet property="currencySymbol" destination="7hT-NR-cns" id="Grg-A4-aYm"/>
+                <outlet property="dropDownImg" destination="f2p-Jk-Mf5" id="3oF-ka-tJy"/>
+                <outlet property="outerView" destination="UnC-9z-RHM" id="8Nf-bA-fbU"/>
+                <outlet property="rate" destination="Vrz-Ru-6Um" id="7gC-Qh-8uY"/>
+                <outlet property="serviceItem" destination="V2G-5h-yLA" id="NsQ-C8-nyR"/>
+            </connections>
+            <point key="canvasLocation" x="-12" y="133"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dropdown_btn_red" width="17.5" height="10"/>
+        <namedColor name="Backgrnd">
+            <color red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ThemBgrnd">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ThemeMain">
+            <color red="0.91764705882352937" green="0.2196078431372549" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

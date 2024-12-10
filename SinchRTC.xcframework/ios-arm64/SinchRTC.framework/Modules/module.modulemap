@@ -1,0 +1,4 @@
+framework module SinchRTC {
+  export *
+  module SinchRTC { export * }
+}

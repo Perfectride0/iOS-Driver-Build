@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="FeedbackTVC" rowHeight="166" id="KGk-i7-Jjw" customClass="FeedbackTVC" customModule="DriverWallet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="166"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="166"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TEo-om-LCv" customClass="SecondaryView" customModule="DriverWallet" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="310" height="156"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Erp-77-E33">
+                                <rect key="frame" x="15" y="25" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Erp-77-E33" secondAttribute="height" multiplier="1:1" id="UlY-Ju-1ti"/>
+                                    <constraint firstAttribute="height" constant="60" id="fRB-yN-ZFO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jg3-oc-RfM" customClass="SecondaryRegularLabel" customModule="DriverWallet" customModuleProvider="target">
+                                <rect key="frame" x="83" y="15" width="187" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon ionic-ios-arrow-down-1" translatesAutoresizingMaskIntoConstraints="NO" id="ERC-c5-gfw" customClass="CommonColorImageView" customModule="DriverWallet" customModuleProvider="target">
+                                <rect key="frame" x="280" y="47.5" width="15" height="15"/>
+                                <color key="tintColor" name="ThemeMain"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="okK-hc-Sez"/>
+                                    <constraint firstAttribute="width" constant="15" id="sGG-i8-X1j"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cTX-ao-1h4">
+                                <rect key="frame" x="83" y="47" width="27" height="16"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7V-kn-mdn">
+                                        <rect key="frame" x="0.0" y="0.0" width="3" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="FCA-ZI-Kcp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zmO-vO-YLJ" customClass="FloatRatingView" customModule="DriverWallet" customModuleProvider="target">
+                                        <rect key="frame" x="7" y="0.0" width="100" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="8AI-ER-mUL"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="StarEmpty"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="fullImage" value="StarFull1"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="74A-KM-2eX">
+                                        <rect key="frame" x="11" y="0.0" width="16" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="74A-KM-2eX" secondAttribute="height" multiplier="1:1" id="3SM-zq-G8Y"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OO4-nL-eMv" customClass="SecondaryRegularLabel" customModule="DriverWallet" customModuleProvider="target">
+                                <rect key="frame" x="83" y="73" width="187" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="aX8-zy-AXq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4XS-wt-7vQ">
+                                <rect key="frame" x="15" y="93" width="280" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="6Gg-eJ-bMq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJd-fN-Qxs" customClass="SecondaryRegularLabel" customModule="DriverWallet" customModuleProvider="target">
+                                <rect key="frame" x="15" y="102" width="280" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="ThemBgrnd"/>
+                        <constraints>
+                            <constraint firstItem="Erp-77-E33" firstAttribute="top" secondItem="TEo-om-LCv" secondAttribute="top" constant="25" id="077-jw-w2A"/>
+                            <constraint firstItem="ERC-c5-gfw" firstAttribute="leading" secondItem="jg3-oc-RfM" secondAttribute="trailing" constant="10" id="9qs-gT-9B0"/>
+                            <constraint firstItem="4XS-wt-7vQ" firstAttribute="leading" secondItem="TEo-om-LCv" secondAttribute="leading" constant="15" id="Gmk-03-M54"/>
+                            <constraint firstItem="jg3-oc-RfM" firstAttribute="top" secondItem="TEo-om-LCv" secondAttribute="top" constant="15" id="H2K-Wo-6Rl"/>
+                            <constraint firstItem="4XS-wt-7vQ" firstAttribute="top" secondItem="OO4-nL-eMv" secondAttribute="bottom" constant="4" id="HS0-sX-Eyc"/>
+                            <constraint firstItem="OO4-nL-eMv" firstAttribute="leading" secondItem="cTX-ao-1h4" secondAttribute="leading" id="HX2-Dd-rpI"/>
+                            <constraint firstItem="ERC-c5-gfw" firstAttribute="centerY" secondItem="Erp-77-E33" secondAttribute="centerY" id="Kq8-P0-J6V"/>
+                            <constraint firstItem="cTX-ao-1h4" firstAttribute="top" secondItem="jg3-oc-RfM" secondAttribute="bottom" constant="10" id="L1K-ph-aZm"/>
+                            <constraint firstItem="LJd-fN-Qxs" firstAttribute="top" secondItem="4XS-wt-7vQ" secondAttribute="bottom" constant="8" id="MLZ-vD-beJ"/>
+                            <constraint firstItem="jg3-oc-RfM" firstAttribute="leading" secondItem="Erp-77-E33" secondAttribute="trailing" constant="8" id="Sla-ih-2s4"/>
+                            <constraint firstItem="Erp-77-E33" firstAttribute="leading" secondItem="TEo-om-LCv" secondAttribute="leading" constant="15" id="U6c-jQ-v4Y"/>
+                            <constraint firstItem="cTX-ao-1h4" firstAttribute="leading" secondItem="jg3-oc-RfM" secondAttribute="leading" id="VZs-na-s5p"/>
+                            <constraint firstItem="OO4-nL-eMv" firstAttribute="trailing" secondItem="jg3-oc-RfM" secondAttribute="trailing" id="cYa-Hu-lbQ"/>
+                            <constraint firstItem="cTX-ao-1h4" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="jg3-oc-RfM" secondAttribute="trailing" constant="10" id="ejv-Bc-KLl"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="LJd-fN-Qxs" secondAttribute="bottom" constant="8" id="fnE-Eg-Wdn"/>
+                            <constraint firstItem="cTX-ao-1h4" firstAttribute="centerY" secondItem="Erp-77-E33" secondAttribute="centerY" id="hmo-ex-oeo"/>
+                            <constraint firstAttribute="trailing" secondItem="ERC-c5-gfw" secondAttribute="trailing" constant="15" id="if6-sq-sJ6"/>
+                            <constraint firstItem="OO4-nL-eMv" firstAttribute="top" secondItem="cTX-ao-1h4" secondAttribute="bottom" constant="10" id="oKc-gw-YnJ"/>
+                            <constraint firstItem="LJd-fN-Qxs" firstAttribute="leading" secondItem="4XS-wt-7vQ" secondAttribute="leading" id="rVR-6i-hku"/>
+                            <constraint firstAttribute="trailing" secondItem="4XS-wt-7vQ" secondAttribute="trailing" constant="15" id="t2P-Wm-VPp"/>
+                            <constraint firstItem="LJd-fN-Qxs" firstAttribute="trailing" secondItem="4XS-wt-7vQ" secondAttribute="trailing" id="t9E-K5-XW0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="TEo-om-LCv" secondAttribute="trailing" constant="5" id="5vS-lR-oge"/>
+                    <constraint firstItem="TEo-om-LCv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Tq3-ut-6sE"/>
+                    <constraint firstItem="TEo-om-LCv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="ZeA-0V-vpy"/>
+                    <constraint firstAttribute="bottom" secondItem="TEo-om-LCv" secondAttribute="bottom" constant="5" id="rWn-Ie-1i6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLbl" destination="OO4-nL-eMv" id="8Fi-KQ-0Yx"/>
+                <outlet property="expandableImageView" destination="ERC-c5-gfw" id="JTl-R1-NqE"/>
+                <outlet property="feedbackdescriptionLbl" destination="LJd-fN-Qxs" id="lM6-9w-5zf"/>
+                <outlet property="lineLbl" destination="4XS-wt-7vQ" id="LqR-0r-3eC"/>
+                <outlet property="parentView" destination="TEo-om-LCv" id="vpg-1V-9AB"/>
+                <outlet property="ratingCountLbl" destination="n7V-kn-mdn" id="KK9-Fb-1Ck"/>
+                <outlet property="ratingView" destination="zmO-vO-YLJ" id="Qei-Ut-7EX"/>
+                <outlet property="thumbsIV" destination="74A-KM-2eX" id="k7q-w7-i1d"/>
+                <outlet property="userNameLbl" destination="jg3-oc-RfM" id="cgt-4l-TmS"/>
+                <outlet property="userProfileImageView" destination="Erp-77-E33" id="5gL-D4-i3e"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="144.64285714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Icon ionic-ios-arrow-down-1" width="10" height="17.5"/>
+        <image name="StarEmpty" width="32" height="32"/>
+        <image name="StarFull1" width="32" height="32"/>
+        <namedColor name="ThemBgrnd">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ThemeMain">
+            <color red="0.91764705882352937" green="0.2196078431372549" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

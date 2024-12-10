@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ClanPro-News.otf">
+            <string>ClanPro-News</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NormalTripTVC" rowHeight="374" id="7Wy-eu-zPp" customClass="NormalTripTVC" customModule="DriverWallet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="437" height="327"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7Wy-eu-zPp" id="qEp-8H-NPw">
+                <rect key="frame" x="0.0" y="0.0" width="437" height="327"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dCW-N7-Jh6">
+                        <rect key="frame" x="0.0" y="0.0" width="437" height="314.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="active_trip_bg" translatesAutoresizingMaskIntoConstraints="NO" id="KWN-pw-ZQa">
+                                <rect key="frame" x="0.0" y="0.0" width="437" height="240"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="EdU-uS-Tsk"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wfp-4i-ZAo">
+                                <rect key="frame" x="0.0" y="240" width="437" height="60"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="lIF-fV-Omo">
+                                        <rect key="frame" x="8" y="0.0" width="421" height="60"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Lx7-td-Eyb">
+                                                <rect key="frame" x="0.0" y="0.0" width="203" height="60"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHf-yM-jDL">
+                                                        <rect key="frame" x="0.0" y="0.0" width="203" height="30"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="xrG-NX-wFx"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="15"/>
+                                                        <color key="textColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6c2-ng-lQl">
+                                                        <rect key="frame" x="0.0" y="30" width="203" height="30"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="eH6-Ab-JS4"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="15"/>
+                                                        <color key="textColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VPo-pQ-ZZe">
+                                                <rect key="frame" x="218" y="0.0" width="203" height="60"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCg-eP-GfJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="203" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="vZA-UJ-79z"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="15"/>
+                                                        <color key="textColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXk-4k-74y">
+                                                        <rect key="frame" x="0.0" y="30" width="203" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="BBz-mv-bJ4"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="15"/>
+                                                        <color key="textColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ybc-H0-Hv1">
+                                        <rect key="frame" x="226" y="27" width="206" height="33"/>
+                                        <color key="backgroundColor" name="ThemeMain"/>
+                                        <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="17"/>
+                                        <state key="normal" title="Rate Your Ride">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Ybc-H0-Hv1" secondAttribute="trailing" constant="5" id="0dC-4Q-tjW"/>
+                                    <constraint firstItem="lIF-fV-Omo" firstAttribute="top" secondItem="Wfp-4i-ZAo" secondAttribute="top" id="1On-sr-8uR"/>
+                                    <constraint firstItem="Ybc-H0-Hv1" firstAttribute="leading" secondItem="EXk-4k-74y" secondAttribute="leading" id="2uG-gv-gbm"/>
+                                    <constraint firstAttribute="height" constant="60" id="Z9u-KA-bgw"/>
+                                    <constraint firstAttribute="bottom" secondItem="lIF-fV-Omo" secondAttribute="bottom" id="abu-qe-qSu"/>
+                                    <constraint firstAttribute="bottom" secondItem="lIF-fV-Omo" secondAttribute="bottom" id="bOu-g8-fcR"/>
+                                    <constraint firstItem="Ybc-H0-Hv1" firstAttribute="bottom" secondItem="EXk-4k-74y" secondAttribute="bottom" id="gOq-A6-mng"/>
+                                    <constraint firstItem="lIF-fV-Omo" firstAttribute="leading" secondItem="Wfp-4i-ZAo" secondAttribute="leading" constant="8" id="l3N-bU-sCX"/>
+                                    <constraint firstItem="Ybc-H0-Hv1" firstAttribute="top" secondItem="EXk-4k-74y" secondAttribute="top" constant="-3" id="nF2-LU-tmd"/>
+                                    <constraint firstAttribute="trailing" secondItem="lIF-fV-Omo" secondAttribute="trailing" constant="8" id="vtb-ab-2b6"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pickup Address" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KaO-Kg-VqT">
+                                <rect key="frame" x="150" y="56.5" width="282" height="19.5"/>
+                                <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KWN-pw-ZQa" firstAttribute="top" secondItem="dCW-N7-Jh6" secondAttribute="top" id="743-Av-3w5"/>
+                            <constraint firstItem="Wfp-4i-ZAo" firstAttribute="leading" secondItem="dCW-N7-Jh6" secondAttribute="leading" id="7IY-o7-JwT"/>
+                            <constraint firstAttribute="trailing" secondItem="Wfp-4i-ZAo" secondAttribute="trailing" id="CW6-8r-yse"/>
+                            <constraint firstItem="KaO-Kg-VqT" firstAttribute="leading" secondItem="dCW-N7-Jh6" secondAttribute="leading" constant="150" id="GDJ-40-CXF"/>
+                            <constraint firstAttribute="trailing" secondItem="KaO-Kg-VqT" secondAttribute="trailing" constant="5" id="HmB-C9-Ngf"/>
+                            <constraint firstAttribute="bottom" secondItem="Wfp-4i-ZAo" secondAttribute="bottom" id="IUB-7Y-tC4"/>
+                            <constraint firstItem="KWN-pw-ZQa" firstAttribute="leading" secondItem="dCW-N7-Jh6" secondAttribute="leading" id="LWN-VY-pGK"/>
+                            <constraint firstAttribute="trailing" secondItem="KWN-pw-ZQa" secondAttribute="trailing" id="eIZ-ec-dFP"/>
+                            <constraint firstItem="KaO-Kg-VqT" firstAttribute="height" relation="lessThanOrEqual" secondItem="KWN-pw-ZQa" secondAttribute="height" multiplier="0.5" id="ilP-1G-BlK"/>
+                            <constraint firstItem="KaO-Kg-VqT" firstAttribute="centerY" secondItem="KWN-pw-ZQa" secondAttribute="centerY" multiplier="0.55" id="oVS-Zf-hpe"/>
+                            <constraint firstItem="Wfp-4i-ZAo" firstAttribute="top" secondItem="KWN-pw-ZQa" secondAttribute="bottom" id="yYS-Mu-Z3A"/>
+                            <constraint firstAttribute="bottom" secondItem="Wfp-4i-ZAo" secondAttribute="bottom" constant="14.5" id="yt8-CP-f1W"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="IUB-7Y-tC4"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drop Address" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lS7-4n-Nm9">
+                        <rect key="frame" x="150" y="170.5" width="282" height="19.5"/>
+                        <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dCW-N7-Jh6" firstAttribute="centerY" secondItem="qEp-8H-NPw" secondAttribute="centerY" id="24v-pX-z3g"/>
+                    <constraint firstItem="lS7-4n-Nm9" firstAttribute="trailing" secondItem="KaO-Kg-VqT" secondAttribute="trailing" id="3us-Eu-dQr"/>
+                    <constraint firstItem="lS7-4n-Nm9" firstAttribute="height" relation="lessThanOrEqual" secondItem="KWN-pw-ZQa" secondAttribute="height" multiplier="0.5" id="EE1-gy-R5h"/>
+                    <constraint firstItem="dCW-N7-Jh6" firstAttribute="leading" secondItem="qEp-8H-NPw" secondAttribute="leading" id="Lsq-UP-16Z"/>
+                    <constraint firstItem="lS7-4n-Nm9" firstAttribute="centerY" secondItem="KWN-pw-ZQa" secondAttribute="centerY" multiplier="1.5" id="NdL-eB-dL3"/>
+                    <constraint firstItem="dCW-N7-Jh6" firstAttribute="top" secondItem="qEp-8H-NPw" secondAttribute="top" id="RRq-Wl-0lb"/>
+                    <constraint firstAttribute="bottom" secondItem="dCW-N7-Jh6" secondAttribute="bottom" id="dqi-es-xy7"/>
+                    <constraint firstItem="lS7-4n-Nm9" firstAttribute="top" relation="greaterThanOrEqual" secondItem="KaO-Kg-VqT" secondAttribute="bottom" constant="5" id="eeP-m8-cGs"/>
+                    <constraint firstAttribute="trailing" secondItem="dCW-N7-Jh6" secondAttribute="trailing" id="tqa-9h-e82"/>
+                    <constraint firstItem="lS7-4n-Nm9" firstAttribute="leading" secondItem="KaO-Kg-VqT" secondAttribute="leading" id="u0e-Jp-oGa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLeadingConstraint" destination="GDJ-40-CXF" id="M1B-1j-mF7"/>
+                <outlet property="dropLbl" destination="lS7-4n-Nm9" id="KsH-rL-JPj"/>
+                <outlet property="holderView" destination="dCW-N7-Jh6" id="dkB-yK-tK3"/>
+                <outlet property="lblCost" destination="xCg-eP-GfJ" id="CaW-6W-rpV"/>
+                <outlet property="mapImageView" destination="KWN-pw-ZQa" id="rrx-d2-PnD"/>
+                <outlet property="pickUpLbl" destination="KaO-Kg-VqT" id="Dc9-mm-CGM"/>
+                <outlet property="ratingBtn" destination="Ybc-H0-Hv1" id="Q5W-59-6kU"/>
+                <outlet property="statusLbl" destination="EXk-4k-74y" id="S7V-8U-WfE"/>
+                <outlet property="tripIDLbl" destination="ZHf-yM-jDL" id="zsS-yV-mQW"/>
+                <outlet property="vehicleNameLbl" destination="6c2-ng-lQl" id="l8L-m6-OKh"/>
+            </connections>
+            <point key="canvasLocation" x="335.50724637681162" y="92.745535714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="active_trip_bg" width="634" height="250"/>
+        <namedColor name="ThemeMain">
+            <color red="0.91764705882352937" green="0.2196078431372549" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

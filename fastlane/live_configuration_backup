@@ -1,0 +1,34 @@
+//
+//  Goferjek_live.xcconfig
+//  Goferjek
+//
+//  Created by Trioangle on 06/12/21.
+//  Copyright © 2021 Vignesh Palanivel. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// MARK:  ---------- Keys and Identifiers ----------------
+USER_APP_NAME        = Jenkin_USER_APP_NAME
+USER_BUNDLE_ID       = Jenkin_USER_BUNDLE_ID						//com.trioangle.goferjekk
+GOOGLE_MAP_KEY       = Jenkin_GOOGLE_API_KEY						//Enter Your Map Key Here
+GOOGLE_API_KEY       = Jenkin_GOOGLE_API_KEY						//Enter Your API Key Here
+
+// MARK:  ---------- Application Version and App URL ----------------
+USER_VERSION         = 	1.0							//2.5
+USER_BUILD           = 	1							//1
+RELEASE_VERSION      = 	1.0						//2.4 // For Force Update
+APP_URL              = https:\/\/Jenkin_Domain_Name/				//https:\/\/goferjek.trioangle.com/
+DEVELOPMENT_TEAM     = 	Jenkin_DEVELOPMENT_TEAM						//W89HL6566S
+REDIRECT_APP_USER    = 	Jenkin_REDIRECT_APP_USER					//goferhandyuser://
+USER_TYPE            =  Provider
+
+// MARK:  ---------- Appstore details and redirection url ----------------
+USER_APPSTORE_ID             = Jenkin_USERAPPID
+USER_APPSTORE_DISPLAY_NAME   = Jenkin_USERAPPDISPLAYNAME
+USER_APPSTORE_APP_NAME       = Jenkin_USERAPPNAME
+DRIVER_APPSTORE_ID           = Jenkin_DRIVERAPPID
+DRIVER_APPSTORE_DISPLAY_NAME = Jenkin_DRIVERAPPDISPLAYNAME
+DRIVER_APPSTORE_APP_NAME     = Jenkin_DRIVERAPPNAME
+

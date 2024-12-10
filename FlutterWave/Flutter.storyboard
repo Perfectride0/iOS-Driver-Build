@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ClanPro-NarrMedium.otf">
+            <string>ClanPro-NarrMedium</string>
+        </array>
+        <array key="ClanPro-News.otf">
+            <string>ClanPro-News</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-42" y="49"/>
+        </scene>
+        <!--Flutter WaveVC-->
+        <scene sceneID="cQ0-Fc-kyZ">
+            <objects>
+                <viewController storyboardIdentifier="FlutterWaveVC" id="FN3-8m-vhp" customClass="FlutterWaveVC" customModule="FlutterWave" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x0A-px-ADr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QtV-Sm-Ch5">
+                                <rect key="frame" x="0.0" y="44" width="414" height="71.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZS-zO-XsJ">
+                                        <rect key="frame" x="8" y="16" width="58" height="39.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onBackTapped:" destination="FN3-8m-vhp" eventType="touchUpInside" id="LpP-rA-J19"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstItem="hZS-zO-XsJ" firstAttribute="centerY" secondItem="QtV-Sm-Ch5" secondAttribute="centerY" id="42q-hp-9Ab"/>
+                                    <constraint firstItem="hZS-zO-XsJ" firstAttribute="width" secondItem="QtV-Sm-Ch5" secondAttribute="width" multiplier="0.14" id="E6w-rV-FOY"/>
+                                    <constraint firstItem="hZS-zO-XsJ" firstAttribute="height" secondItem="QtV-Sm-Ch5" secondAttribute="height" multiplier="0.55" id="Kvx-g6-y8w"/>
+                                    <constraint firstItem="hZS-zO-XsJ" firstAttribute="leading" secondItem="QtV-Sm-Ch5" secondAttribute="leading" constant="8" id="rTl-om-8NP"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fwi-oV-x3e">
+                                <rect key="frame" x="0.0" y="115.5" width="414" height="780.5"/>
+                                <subviews>
+                                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aj2-0z-Q55">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="780.5"/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <wkWebViewConfiguration key="configuration">
+                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                            <wkPreferences key="preferences"/>
+                                        </wkWebViewConfiguration>
+                                    </wkWebView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Aj2-0z-Q55" secondAttribute="bottom" id="2CU-7g-Vsp"/>
+                                    <constraint firstAttribute="trailing" secondItem="Aj2-0z-Q55" secondAttribute="trailing" id="8Mh-24-AJo"/>
+                                    <constraint firstItem="Aj2-0z-Q55" firstAttribute="top" secondItem="Fwi-oV-x3e" secondAttribute="top" id="L3j-fY-Ifn"/>
+                                    <constraint firstItem="Aj2-0z-Q55" firstAttribute="leading" secondItem="Fwi-oV-x3e" secondAttribute="leading" id="cyQ-oh-Djy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4Af-AZ-2gk"/>
+                        <color key="backgroundColor" systemColor="systemCyanColor"/>
+                        <constraints>
+                            <constraint firstItem="QtV-Sm-Ch5" firstAttribute="top" secondItem="4Af-AZ-2gk" secondAttribute="top" id="1CR-Kl-cZ8"/>
+                            <constraint firstAttribute="bottom" secondItem="Fwi-oV-x3e" secondAttribute="bottom" id="Fdi-d2-gng"/>
+                            <constraint firstItem="Fwi-oV-x3e" firstAttribute="leading" secondItem="4Af-AZ-2gk" secondAttribute="leading" id="G7A-hm-hNW"/>
+                            <constraint firstItem="Fwi-oV-x3e" firstAttribute="trailing" secondItem="4Af-AZ-2gk" secondAttribute="trailing" id="HT7-2n-leo"/>
+                            <constraint firstItem="QtV-Sm-Ch5" firstAttribute="height" secondItem="x0A-px-ADr" secondAttribute="height" multiplier="0.08" id="UtX-Ie-KKX"/>
+                            <constraint firstItem="Fwi-oV-x3e" firstAttribute="top" secondItem="QtV-Sm-Ch5" secondAttribute="bottom" id="bPr-9y-WPJ"/>
+                            <constraint firstItem="QtV-Sm-Ch5" firstAttribute="leading" secondItem="4Af-AZ-2gk" secondAttribute="leading" id="d9Q-tc-5eU"/>
+                            <constraint firstAttribute="trailing" secondItem="QtV-Sm-Ch5" secondAttribute="trailing" id="sCt-Cg-U16"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="Aj2-0z-Q55" id="dVL-d3-Ybe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AFI-Yq-xRn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-722" y="49"/>
+        </scene>
+        <!--Flutter PayoutVC-->
+        <scene sceneID="w8Q-Zf-9p5">
+            <objects>
+                <viewController storyboardIdentifier="FlutterPayoutVC" id="Db3-bZ-eqy" customClass="FlutterPayoutVC" customModule="FlutterWave" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7k9-y4-RS1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dHU-cE-jIT">
+                                <rect key="frame" x="0.0" y="88" width="414" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3jr-Jk-rt2">
+                                        <rect key="frame" x="15" y="10" width="35" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="35" id="GJR-ir-t5G"/>
+                                            <constraint firstAttribute="height" constant="30" id="cA8-Yi-re5"/>
+                                        </constraints>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="onBackTapped:" destination="Db3-bZ-eqy" eventType="touchUpInside" id="gcn-JU-Rms"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flutter Payout" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jgx-Ac-R83">
+                                        <rect key="frame" x="132.5" y="10.5" width="149" height="29.5"/>
+                                        <fontDescription key="fontDescription" name="ClanPro-NarrMedium" family="Clan Pro" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Jgx-Ac-R83" firstAttribute="centerX" secondItem="dHU-cE-jIT" secondAttribute="centerX" id="3kg-kA-M5A"/>
+                                    <constraint firstAttribute="height" constant="50" id="F5w-dU-NjJ"/>
+                                    <constraint firstItem="3jr-Jk-rt2" firstAttribute="centerY" secondItem="dHU-cE-jIT" secondAttribute="centerY" id="VxW-ag-OqJ"/>
+                                    <constraint firstItem="3jr-Jk-rt2" firstAttribute="leading" secondItem="dHU-cE-jIT" secondAttribute="leading" constant="15" id="m9P-wl-k4o"/>
+                                    <constraint firstItem="Jgx-Ac-R83" firstAttribute="centerY" secondItem="dHU-cE-jIT" secondAttribute="centerY" id="n0R-7M-HsC"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wM3-Z7-Am0">
+                                <rect key="frame" x="0.0" y="163" width="414" height="699"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hUK-k3-PLM">
+                                        <rect key="frame" x="20" y="35" width="374" height="204"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="3mx-qi-JSG" userLabel="Email">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="58"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="STm-Le-hVJ" customClass="SecondaryNewView" customModule="FlutterWave" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="55"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Account Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uxc-g8-rpi">
+                                                                <rect key="frame" x="10" y="0.0" width="354" height="55"/>
+                                                                <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="uxc-g8-rpi" firstAttribute="top" secondItem="STm-Le-hVJ" secondAttribute="top" id="IP2-MM-WqN"/>
+                                                            <constraint firstAttribute="trailing" secondItem="uxc-g8-rpi" secondAttribute="trailing" constant="10" id="O4S-8q-vUO"/>
+                                                            <constraint firstItem="uxc-g8-rpi" firstAttribute="leading" secondItem="STm-Le-hVJ" secondAttribute="leading" constant="10" id="Txs-FH-KUh"/>
+                                                            <constraint firstAttribute="bottom" secondItem="uxc-g8-rpi" secondAttribute="bottom" id="atz-YR-x4I"/>
+                                                            <constraint firstAttribute="height" constant="55" id="mYi-UW-mEr"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="LightGrayColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WQ-Sd-iNi">
+                                                        <rect key="frame" x="0.0" y="58" width="374" height="0.0"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" id="D6g-6f-Bp8"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="12"/>
+                                                        <color key="textColor" name="ThemMain"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="eBx-Tw-1z7" userLabel="Email">
+                                                <rect key="frame" x="0.0" y="73" width="374" height="58"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bar-2U-zAX" customClass="SecondaryNewView" customModule="FlutterWave" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="55"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Account Bank" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nln-r9-JT2">
+                                                                <rect key="frame" x="10" y="0.0" width="354" height="55"/>
+                                                                <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="Nln-r9-JT2" firstAttribute="top" secondItem="bar-2U-zAX" secondAttribute="top" id="JWW-Mb-nha"/>
+                                                            <constraint firstItem="Nln-r9-JT2" firstAttribute="leading" secondItem="bar-2U-zAX" secondAttribute="leading" constant="10" id="Q9z-gE-V3p"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Nln-r9-JT2" secondAttribute="bottom" id="Sx1-kP-ZN2"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Nln-r9-JT2" secondAttribute="trailing" constant="10" id="Ueq-ue-G2Z"/>
+                                                            <constraint firstAttribute="height" constant="55" id="t7U-sp-DwZ"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="LightGrayColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdz-Bw-MYs">
+                                                        <rect key="frame" x="0.0" y="58" width="374" height="0.0"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" id="rzJ-fI-LI1"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="12"/>
+                                                        <color key="textColor" name="ThemMain"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="jgL-yC-oUv" userLabel="Email">
+                                                <rect key="frame" x="0.0" y="146" width="374" height="58"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nt5-6Y-3DC" customClass="SecondaryNewView" customModule="FlutterWave" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="55"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Beneficiary Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Osf-Oh-wpV">
+                                                                <rect key="frame" x="10" y="0.0" width="354" height="55"/>
+                                                                <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="Osf-Oh-wpV" firstAttribute="top" secondItem="Nt5-6Y-3DC" secondAttribute="top" id="3ce-qa-JRU"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Osf-Oh-wpV" secondAttribute="bottom" id="A4Z-I8-Saw"/>
+                                                            <constraint firstItem="Osf-Oh-wpV" firstAttribute="leading" secondItem="Nt5-6Y-3DC" secondAttribute="leading" constant="10" id="eFW-OF-aIj"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Osf-Oh-wpV" secondAttribute="trailing" constant="10" id="ihz-zb-kQ2"/>
+                                                            <constraint firstAttribute="height" constant="55" id="mWB-H5-q65"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="LightGrayColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bz-5c-TnY">
+                                                        <rect key="frame" x="0.0" y="58" width="374" height="0.0"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" id="yrZ-Kl-uW1"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="12"/>
+                                                        <color key="textColor" name="ThemMain"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="SqF-ZY-lHs" userLabel="Email">
+                                                <rect key="frame" x="0.0" y="204" width="374" height="58"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUV-8M-mFL" customClass="SecondaryNewView" customModule="FlutterWave" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="55"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Account Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JDV-GM-NeN">
+                                                                <rect key="frame" x="10" y="0.0" width="354" height="55"/>
+                                                                <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="JDV-GM-NeN" secondAttribute="trailing" constant="10" id="59g-GB-qCx"/>
+                                                            <constraint firstItem="JDV-GM-NeN" firstAttribute="leading" secondItem="gUV-8M-mFL" secondAttribute="leading" constant="10" id="IZz-qP-pZw"/>
+                                                            <constraint firstAttribute="bottom" secondItem="JDV-GM-NeN" secondAttribute="bottom" id="UQp-M8-GG5"/>
+                                                            <constraint firstItem="JDV-GM-NeN" firstAttribute="top" secondItem="gUV-8M-mFL" secondAttribute="top" id="pg1-J6-AFa"/>
+                                                            <constraint firstAttribute="height" constant="55" id="yh0-CF-4ut"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="LightGrayColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4T-ss-YTb">
+                                                        <rect key="frame" x="0.0" y="58" width="374" height="0.0"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" id="qcT-LQ-Svo"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="12"/>
+                                                        <color key="textColor" name="ThemMain"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="aq8-Eg-x1s" userLabel="Email">
+                                                <rect key="frame" x="0.0" y="204" width="374" height="58"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jia-C0-9Qx" customClass="SecondaryNewView" customModule="FlutterWave" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="55"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FAc-V2-OxE">
+                                                                <rect key="frame" x="10" y="0.0" width="354" height="55"/>
+                                                                <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="FAc-V2-OxE" secondAttribute="trailing" constant="10" id="3rS-OD-fdu"/>
+                                                            <constraint firstAttribute="height" constant="55" id="Iob-a7-C0H"/>
+                                                            <constraint firstAttribute="bottom" secondItem="FAc-V2-OxE" secondAttribute="bottom" id="LVD-hI-PBO"/>
+                                                            <constraint firstItem="FAc-V2-OxE" firstAttribute="top" secondItem="jia-C0-9Qx" secondAttribute="top" id="VDb-4h-470"/>
+                                                            <constraint firstItem="FAc-V2-OxE" firstAttribute="leading" secondItem="jia-C0-9Qx" secondAttribute="leading" constant="10" id="roH-bM-La8"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="LightGrayColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hS-La-fAK">
+                                                        <rect key="frame" x="0.0" y="58" width="374" height="0.0"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" id="dJ5-Xf-EDE"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="12"/>
+                                                        <color key="textColor" name="ThemMain"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="As7-29-wkY" userLabel="Email">
+                                                <rect key="frame" x="0.0" y="204" width="374" height="58"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dpQ-eK-gHE" customClass="SecondaryNewView" customModule="FlutterWave" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="55"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Ed-iI-Clx">
+                                                                <rect key="frame" x="10" y="0.0" width="354" height="55"/>
+                                                                <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="1Ed-iI-Clx" secondAttribute="bottom" id="DxY-Wj-g69"/>
+                                                            <constraint firstItem="1Ed-iI-Clx" firstAttribute="top" secondItem="dpQ-eK-gHE" secondAttribute="top" id="O7q-32-7Yz"/>
+                                                            <constraint firstItem="1Ed-iI-Clx" firstAttribute="leading" secondItem="dpQ-eK-gHE" secondAttribute="leading" constant="10" id="QRf-0u-K4P"/>
+                                                            <constraint firstAttribute="trailing" secondItem="1Ed-iI-Clx" secondAttribute="trailing" constant="10" id="SgB-Aw-m89"/>
+                                                            <constraint firstAttribute="height" constant="55" id="cKd-hm-cvk"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="LightGrayColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ifc-IL-zDI">
+                                                        <rect key="frame" x="0.0" y="58" width="374" height="0.0"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" id="DGm-5u-Xr8"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="12"/>
+                                                        <color key="textColor" name="ThemMain"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="EEY-V1-A5p" userLabel="Email">
+                                                <rect key="frame" x="0.0" y="204" width="374" height="58"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dde-mb-jRq" customClass="SecondaryNewView" customModule="FlutterWave" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="55"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="City / Town / Distric" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9w8-m2-aIs">
+                                                                <rect key="frame" x="10" y="0.0" width="354" height="55"/>
+                                                                <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="9w8-m2-aIs" firstAttribute="leading" secondItem="dde-mb-jRq" secondAttribute="leading" constant="10" id="7yg-JW-btv"/>
+                                                            <constraint firstAttribute="height" constant="55" id="QxI-IL-Nez"/>
+                                                            <constraint firstItem="9w8-m2-aIs" firstAttribute="top" secondItem="dde-mb-jRq" secondAttribute="top" id="S8k-Ym-SEa"/>
+                                                            <constraint firstAttribute="bottom" secondItem="9w8-m2-aIs" secondAttribute="bottom" id="hQ3-gU-R1G"/>
+                                                            <constraint firstAttribute="trailing" secondItem="9w8-m2-aIs" secondAttribute="trailing" constant="10" id="lr3-qd-rIU"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="LightGrayColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcF-nQ-gc8">
+                                                        <rect key="frame" x="0.0" y="58" width="374" height="0.0"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" id="ufl-zC-dqT"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="12"/>
+                                                        <color key="textColor" name="ThemMain"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="6kQ-Fs-TDR" userLabel="Email">
+                                                <rect key="frame" x="0.0" y="204" width="374" height="58"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPZ-fH-i6L" customClass="SecondaryNewView" customModule="FlutterWave" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="55"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="State / Province" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oza-V6-9Sc">
+                                                                <rect key="frame" x="10" y="0.0" width="354" height="55"/>
+                                                                <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="55" id="3G3-JA-A1c"/>
+                                                            <constraint firstAttribute="bottom" secondItem="oza-V6-9Sc" secondAttribute="bottom" id="JNI-6c-DMO"/>
+                                                            <constraint firstAttribute="trailing" secondItem="oza-V6-9Sc" secondAttribute="trailing" constant="10" id="KEy-ZE-y0r"/>
+                                                            <constraint firstItem="oza-V6-9Sc" firstAttribute="top" secondItem="mPZ-fH-i6L" secondAttribute="top" id="lSi-0h-Yp2"/>
+                                                            <constraint firstItem="oza-V6-9Sc" firstAttribute="leading" secondItem="mPZ-fH-i6L" secondAttribute="leading" constant="10" id="t9M-58-3rO"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="LightGrayColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjb-tS-nm8">
+                                                        <rect key="frame" x="0.0" y="58" width="374" height="0.0"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" id="Ay3-cb-k7o"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="12"/>
+                                                        <color key="textColor" name="ThemMain"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="VFo-A9-HS0" userLabel="Email">
+                                                <rect key="frame" x="0.0" y="204" width="374" height="58"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C3h-wd-38t" customClass="SecondaryNewView" customModule="FlutterWave" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="55"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Zip / Postal Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yZV-EY-EP1">
+                                                                <rect key="frame" x="10" y="0.0" width="354" height="55"/>
+                                                                <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="yZV-EY-EP1" firstAttribute="leading" secondItem="C3h-wd-38t" secondAttribute="leading" constant="10" id="3d4-On-fyy"/>
+                                                            <constraint firstAttribute="trailing" secondItem="yZV-EY-EP1" secondAttribute="trailing" constant="10" id="L2F-fp-Rrn"/>
+                                                            <constraint firstItem="yZV-EY-EP1" firstAttribute="top" secondItem="C3h-wd-38t" secondAttribute="top" id="SOZ-3n-ZOo"/>
+                                                            <constraint firstAttribute="height" constant="55" id="v16-i8-ASk"/>
+                                                            <constraint firstAttribute="bottom" secondItem="yZV-EY-EP1" secondAttribute="bottom" id="wrL-Ea-5oK"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="LightGrayColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EpL-Kh-9N1">
+                                                        <rect key="frame" x="0.0" y="58" width="374" height="0.0"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" id="eYq-Ke-Dkm"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="12"/>
+                                                        <color key="textColor" name="ThemMain"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="iFG-RX-SPY" userLabel="Email">
+                                                <rect key="frame" x="0.0" y="204" width="374" height="58"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0dV-VR-I4b">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="55"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name@example.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VtZ-cr-itX">
+                                                                <rect key="frame" x="10" y="0.0" width="354" height="55"/>
+                                                                <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="VtZ-cr-itX" secondAttribute="trailing" constant="10" id="I0X-Sf-199"/>
+                                                            <constraint firstAttribute="height" constant="55" id="JNh-g1-WaO"/>
+                                                            <constraint firstAttribute="bottom" secondItem="VtZ-cr-itX" secondAttribute="bottom" id="M5P-vK-Ga1"/>
+                                                            <constraint firstItem="VtZ-cr-itX" firstAttribute="leading" secondItem="0dV-VR-I4b" secondAttribute="leading" constant="10" id="aZU-d6-dFI"/>
+                                                            <constraint firstItem="VtZ-cr-itX" firstAttribute="top" secondItem="0dV-VR-I4b" secondAttribute="top" id="lLA-sV-2kH"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="LightGrayColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hln-uc-LXN">
+                                                        <rect key="frame" x="0.0" y="58" width="374" height="0.0"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" id="Tac-tN-092"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="ClanPro-News" family="Clan Pro" pointSize="12"/>
+                                                        <color key="textColor" name="ThemMain"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gka-jj-l7Z">
+                                        <rect key="frame" x="25" y="569" width="364" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KjX-dE-eli">
+                                                <rect key="frame" x="36.5" y="16.5" width="291" height="67"/>
+                                                <color key="backgroundColor" name="Green"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Submit">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onSubmitTapped:" destination="Db3-bZ-eqy" eventType="touchUpInside" id="sd1-I0-SuF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="6eQ-aP-PjD"/>
+                                            <constraint firstItem="KjX-dE-eli" firstAttribute="centerX" secondItem="Gka-jj-l7Z" secondAttribute="centerX" id="77h-KF-bgq"/>
+                                            <constraint firstItem="KjX-dE-eli" firstAttribute="height" secondItem="Gka-jj-l7Z" secondAttribute="height" multiplier="0.67" id="Azn-Yq-qmZ"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="55" id="D1l-LE-vNQ"/>
+                                            <constraint firstItem="KjX-dE-eli" firstAttribute="width" secondItem="Gka-jj-l7Z" secondAttribute="width" multiplier="0.8" id="EpV-7d-uvk"/>
+                                            <constraint firstItem="KjX-dE-eli" firstAttribute="centerY" secondItem="Gka-jj-l7Z" secondAttribute="centerY" id="dRD-Ym-N4c"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="j0i-mO-dhV"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="LightGrayColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="D1l-LE-vNQ"/>
+                                                <exclude reference="j0i-mO-dhV"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="hUK-k3-PLM" secondAttribute="trailing" constant="20" id="27N-eo-SUE"/>
+                                    <constraint firstAttribute="bottom" secondItem="Gka-jj-l7Z" secondAttribute="bottom" constant="30" id="35j-0O-loK"/>
+                                    <constraint firstItem="hUK-k3-PLM" firstAttribute="leading" secondItem="wM3-Z7-Am0" secondAttribute="leading" constant="20" id="8pi-No-Ui3"/>
+                                    <constraint firstItem="Gka-jj-l7Z" firstAttribute="leading" secondItem="wM3-Z7-Am0" secondAttribute="leading" constant="25" id="Mhl-34-dfT"/>
+                                    <constraint firstItem="hUK-k3-PLM" firstAttribute="top" secondItem="wM3-Z7-Am0" secondAttribute="top" constant="35" id="qSD-az-Ujf"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gka-jj-l7Z" secondAttribute="trailing" constant="25" id="w1l-ck-EqS"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GoY-Zj-ZQf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wM3-Z7-Am0" firstAttribute="bottom" secondItem="GoY-Zj-ZQf" secondAttribute="bottom" id="J4y-bZ-7zz"/>
+                            <constraint firstItem="wM3-Z7-Am0" firstAttribute="leading" secondItem="GoY-Zj-ZQf" secondAttribute="leading" id="OEf-Z7-fVa"/>
+                            <constraint firstItem="wM3-Z7-Am0" firstAttribute="top" secondItem="dHU-cE-jIT" secondAttribute="bottom" constant="25" id="YYK-hG-EJL"/>
+                            <constraint firstItem="dHU-cE-jIT" firstAttribute="trailing" secondItem="GoY-Zj-ZQf" secondAttribute="trailing" id="Zhs-yB-h5n"/>
+                            <constraint firstItem="wM3-Z7-Am0" firstAttribute="trailing" secondItem="GoY-Zj-ZQf" secondAttribute="trailing" id="bqi-gU-UwT"/>
+                            <constraint firstItem="dHU-cE-jIT" firstAttribute="leading" secondItem="GoY-Zj-ZQf" secondAttribute="leading" id="eBF-dX-LKf"/>
+                            <constraint firstItem="dHU-cE-jIT" firstAttribute="top" secondItem="GoY-Zj-ZQf" secondAttribute="top" id="rfq-ZM-LYZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8MZ-EL-I7r"/>
+                    <connections>
+                        <outlet property="accNumTxtFld" destination="uxc-g8-rpi" id="GgC-Nk-5wn"/>
+                        <outlet property="accountBank" destination="Nln-r9-JT2" id="MdM-jL-BHz"/>
+                        <outlet property="backBtn" destination="3jr-Jk-rt2" id="te6-D9-8h7"/>
+                        <outlet property="benifiNameTxtFld" destination="Osf-Oh-wpV" id="K3y-2m-aSK"/>
+                        <outlet property="subMitBtn" destination="KjX-dE-eli" id="bFS-qk-mUT"/>
+                        <outlet property="titleLbl" destination="Jgx-Ac-R83" id="6LX-nd-BnV"/>
+                        <outlet property="topCuredView" destination="wM3-Z7-Am0" id="Ap6-4a-pqA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XG3-v9-GQj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1375" y="49"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7ZR-T0-0ne">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gN5-Fi-XGT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TFm-EX-Cm0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Db3-bZ-eqy" kind="relationship" relationship="rootViewController" id="Dcw-XS-4K0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Bs-Ht-Hjt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="631.8840579710145" y="48.883928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="180" height="180"/>
+        <namedColor name="Green">
+            <color red="0.15294117647058825" green="0.66666666666666663" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightGrayColor">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ThemMain">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

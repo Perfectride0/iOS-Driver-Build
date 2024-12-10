@@ -1,0 +1,24 @@
+framework module SinchRTC_Private {
+  header "SINAPSEnvironment.h"
+  header "SINAudioController.h"
+  header "SINCall.h"
+  header "SINCallClient.h"
+  header "SINCallDetails.h"
+  header "SINCallNotificationResult.h"
+  header "SINClient.h"
+  header "SINClientRegistration.h"
+  header "SINError.h"
+  header "SINExport.h"
+  header "SINForwardDeclarations.h"
+  header "SINLogCallback.h"
+  header "SINLogSeverity.h"
+  header "SINManagedPush.h"
+  header "SINNotificationResult.h"
+  header "SINUIView+Fullscreen.h"
+  header "SINVideoController.h"
+  header "SINVideoFrameCallback.h"
+  header "Sinch.h"
+  
+  export *
+}
+
